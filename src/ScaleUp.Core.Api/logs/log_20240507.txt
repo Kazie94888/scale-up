@@ -1,0 +1,6 @@
+[SCALEUP INF] 15:30:40 HTTP GET /favicon.ico responded 404 in 2.6513 ms
+[SCALEUP INF] 15:31:48 HTTP GET /orders/order-status responded 200 in 417.8780 ms
+[SCALEUP INF] 15:31:58 HTTP GET /orders responded 200 in 10419.5804 ms
+[SCALEUP INF] 15:41:40 HTTP GET /favicon.ico responded 404 in 0.8433 ms
+[SCALEUP INF] 15:41:56 HTTP GET /orders/order-status responded 200 in 34.2441 ms
+[SCALEUP INF] 15:41:57 HTTP GET /orders responded 200 in 1840.1516 ms

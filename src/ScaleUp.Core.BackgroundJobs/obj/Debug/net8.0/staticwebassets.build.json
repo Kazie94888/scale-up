@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "wahJbeAdEyzLH5uXIJziK4cLn80MYeNecdbEm/MmNss=",
+  "Source": "ScaleUp.Core.BackgroundJobs",
+  "BasePath": "_content/ScaleUp.Core.BackgroundJobs",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

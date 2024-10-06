@@ -1,0 +1,233 @@
+﻿{
+  "FeaturePermissionConfigurations": {
+    "Values": [
+      {
+        "groupName": "Don hang",
+        "features": [
+          {
+            "code": "OrderViewOrder",
+            "name": "Xem don hang",
+            "note": "Bao gom xem danh sach, tim kiem, loc danh sach va xem chi tiet"
+          },
+          {
+            "code": "OrderCreateOrder",
+            "name": "Tao moi don hang",
+            "note": ""
+          },
+          {
+            "code": "OrderRepeatOrder",
+            "name": "Dat lai don",
+            "note": ""
+          },
+          {
+            "code": "OrderAssignHandler",
+            "name": "Gan nguoi xu ly don hang",
+            "note": ""
+          },
+          {
+            "code": "OrderAssignWarehouse",
+            "name": "Gan kho lay hang",
+            "note": ""
+          },
+          {
+            "code": "OrderChangeStatus",
+            "name": "Thay doi trang thai don hang",
+            "note": ""
+          },
+          {
+            "code": "OrderConfirmOrder",
+            "name": "Xac nhan don hang",
+            "note": ""
+          },
+          {
+            "code": "OrderConfirmPayment",
+            "name": "Xac nhan thanh toan",
+            "note": ""
+          },
+          {
+            "code": "OrderChangeShippingMethod",
+            "name": "Thay doi phuong thuc giao hang",
+            "note": ""
+          },
+          {
+            "code": "OrderCancelOrder",
+            "name": "Huy don hang",
+            "note": ""
+          },
+          {
+            "code": "OrderPickupOrder",
+            "name": "Lay hang",
+            "note": ""
+          },
+          {
+            "code": "OrderCloseOrder",
+            "name": "Dong hang",
+            "note": ""
+          },
+          {
+            "code": "OrderPrintInvoice",
+            "name": "In van don",
+            "note": ""
+          },
+          {
+            "code": "OrderDeliverOrder",
+            "name": "Giao hang",
+            "note": ""
+          },          
+          {
+            "code": "OrderReceiveOrder",
+            "name": "Nhận đơn hàng",
+            "note": "Nhận đơn ở list order"
+          }
+        ]
+      },
+      {
+        "groupName": "Khach hang",
+        "features": [
+          {
+            "code": "CustomerViewCustomer",
+            "name": "Xem khach hang",
+            "note": "Bao gom xem danh sach, tim kiem, loc danh sach va xem chi tiet"
+          },
+          {
+            "code": "CustomerCreateOrUpdateCustomer",
+            "name": "Tao moi hoac chinh sua khach hang",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "groupName": "Quan ly ton kho",
+        "features": [
+          {
+            "code": "InventoryViewWarehouse",
+            "name": "Xem kho hang",
+            "note": "Bao gom xem danh sach va xem chi tiet"
+          },
+          {
+            "code": "InventoryCreateOrUpdateWarehouse",
+            "name": "Tao moi hoac chinh sua kho hang",
+            "note": ""
+          },
+          {
+            "code": "InventoryReceiveGoods",
+            "name": "Nhap hang",
+            "note": ""
+          },
+          {
+            "code": "InventoryReturnGoods",
+            "name": "Tra hang nhap",
+            "note": ""
+          },
+          {
+            "code": "InventoryViewSupplier",
+            "name": "Xem nha cung cap",
+            "note": "Bao gom xem danh sach va xem chi tiet"
+          },
+          {
+            "code": "InventoryCreateOrUpdateSupplier",
+            "name": "Tao moi hoac chinh sua nha cung cap",
+            "note": ""
+          },
+          {
+            "code": "InventoryStockCheck",
+            "name": "Kiem kho",
+            "note": ""
+          },
+          {
+            "code": "InventoryTransfer",
+            "name": "Dieu chuyen",
+            "note": ""
+          },
+          {
+            "code": "InventoryViewStockHistory",
+            "name": "Xem lich su ton kho",
+            "note": "Bao gom xem danh sach, tim kiem, loc danh sach"
+          }
+        ]
+      },
+      {
+        "groupName": "Danh muc",
+        "features": [
+          {
+            "code": "CategoryViewProduct",
+            "name": "Xem san pham",
+            "note": "Bao gom xem danh sach, tim kiem, loc danh sach va xem chi tiet"
+          },
+          {
+            "code": "CategoryCreateOrUpdateProduct",
+            "name": "Tao moi hoac chinh sua san pham",
+            "note": ""
+          },
+          {
+            "code": "CategoryViewProductType",
+            "name": "Xem loai san pham",
+            "note": ""
+          },
+          {
+            "code": "CategoryCreateOrUpdateProductType",
+            "name": "Tao moi hoac chinh sua loai san pham",
+            "note": ""
+          },
+          {
+            "code": "CategoryManageFiles",
+            "name": "Quan ly File",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "groupName": "Tich hop",
+        "features": [
+          {
+            "code": "IntegrationViewConnections",
+            "name": "Xem cac ket noi",
+            "note": ""
+          },
+          {
+            "code": "IntegrationConfigureConnections",
+            "name": "Cau hinh ket noi",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "groupName": "Dong bo",
+        "features": [
+          {
+            "code": "SyncViewStatistics",
+            "name": "Xem thong ke dong bo",
+            "note": "Bao gom toan bo lich dong bo va xem chi tiet, don hang va ton kho"
+          }
+        ]
+      },
+      {
+        "groupName": "Cau hinh",
+        "features": [
+          {
+            "code": "ConfigViewRoles",
+            "name": "Xem vai tro",
+            "note": "Bao gom xem danh sach va xem chi tiet"
+          },
+          {
+            "code": "ConfigCreateOrUpdateRole",
+            "name": "Tao moi hoac chinh sua vai tro",
+            "note": ""
+          },
+          {
+            "code": "ConfigViewMembers",
+            "name": "Xem thanh vien",
+            "note": "Bao gom xem danh sach va xem chi tiet"
+          },
+          {
+            "code": "ConfigCreateOrUpdateMember",
+            "name": "Tao moi hoac chinh sua thanh vien",
+            "note": ""
+          }
+        ]
+      }
+    ]
+  }
+}
+
+

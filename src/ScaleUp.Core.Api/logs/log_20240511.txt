@@ -1,0 +1,1 @@
+[SCALEUP INF] 17:26:11 HTTP GET /favicon.ico responded 404 in 0.5133 ms

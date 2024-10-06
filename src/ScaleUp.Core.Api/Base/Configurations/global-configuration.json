@@ -1,0 +1,8 @@
+﻿{
+  "GlobalConfigurations" : {
+    "GoogleConfig" : {
+      "ApiKey" :  "U7ueS6co",
+      "ApiUrl" :  "maps.googleapis.com"
+    }
+  }
+}

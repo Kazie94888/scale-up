@@ -1,0 +1,402 @@
+[SCALEUP INF] 09:01:45 HTTP GET /favicon.ico responded 404 in 0.5083 ms
+[SCALEUP ERR] 13:55:29 HTTP POST /tenants responded 500 in 18.7162 ms
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "CreateTenantRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to System.Nullable`1[System.DateTime]. Path: $.activationEndDate | LineNumber: 3 | BytePositionInLine: 35.
+ ---> System.FormatException: The JSON value is not in a supported DateTime format.
+   at System.Text.Json.ThrowHelper.ThrowFormatException(DataType dataType)
+   at System.Text.Json.Utf8JsonReader.GetDateTime()
+   at System.Text.Json.Serialization.Converters.NullableConverter`1.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 13:55:29 An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "CreateTenantRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to System.Nullable`1[System.DateTime]. Path: $.activationEndDate | LineNumber: 3 | BytePositionInLine: 35.
+ ---> System.FormatException: The JSON value is not in a supported DateTime format.
+   at System.Text.Json.ThrowHelper.ThrowFormatException(DataType dataType)
+   at System.Text.Json.Utf8JsonReader.GetDateTime()
+   at System.Text.Json.Serialization.Converters.NullableConverter`1.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP ERR] 13:56:45 HTTP POST /tenants responded 500 in 13.3231 ms
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "CreateTenantRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to System.Nullable`1[System.DateTime]. Path: $.activationEndDate | LineNumber: 3 | BytePositionInLine: 35.
+ ---> System.FormatException: The JSON value is not in a supported DateTime format.
+   at System.Text.Json.ThrowHelper.ThrowFormatException(DataType dataType)
+   at System.Text.Json.Utf8JsonReader.GetDateTime()
+   at System.Text.Json.Serialization.Converters.NullableConverter`1.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 13:56:45 An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "CreateTenantRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to System.Nullable`1[System.DateTime]. Path: $.activationEndDate | LineNumber: 3 | BytePositionInLine: 35.
+ ---> System.FormatException: The JSON value is not in a supported DateTime format.
+   at System.Text.Json.ThrowHelper.ThrowFormatException(DataType dataType)
+   at System.Text.Json.Utf8JsonReader.GetDateTime()
+   at System.Text.Json.Serialization.Converters.NullableConverter`1.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP ERR] 13:57:53 HTTP POST /tenants responded 500 in 1.0764 ms
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "CreateTenantRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to System.Nullable`1[System.DateTime]. Path: $.activationEndDate | LineNumber: 3 | BytePositionInLine: 35.
+ ---> System.FormatException: The JSON value is not in a supported DateTime format.
+   at System.Text.Json.ThrowHelper.ThrowFormatException(DataType dataType)
+   at System.Text.Json.Utf8JsonReader.GetDateTime()
+   at System.Text.Json.Serialization.Converters.NullableConverter`1.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 13:57:53 An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "CreateTenantRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to System.Nullable`1[System.DateTime]. Path: $.activationEndDate | LineNumber: 3 | BytePositionInLine: 35.
+ ---> System.FormatException: The JSON value is not in a supported DateTime format.
+   at System.Text.Json.ThrowHelper.ThrowFormatException(DataType dataType)
+   at System.Text.Json.Utf8JsonReader.GetDateTime()
+   at System.Text.Json.Serialization.Converters.NullableConverter`1.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP INF] 13:58:24 HTTP POST /tenants responded 200 in 2390.0505 ms
+[SCALEUP ERR] 14:57:45 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+MongoDB.Driver.Linq.ExpressionNotSupportedException: Expression not supported: Convert(t.CreatedBy, UserInfoDto) because conversion to ScaleUp.Core.Api.Base.Dtos.UserInfoDto is not supported.
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ConvertExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, UnaryExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberInitExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression, NewExpression newExpression, IReadOnlyList`1 bindings)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberInitExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberInitExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateLambdaBody(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+MongoDB.Driver.Linq.ExpressionNotSupportedException: Expression not supported: Convert(t.CreatedBy, UserInfoDto) because conversion to ScaleUp.Core.Api.Base.Dtos.UserInfoDto is not supported.
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ConvertExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, UnaryExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberInitExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression, NewExpression newExpression, IReadOnlyList`1 bindings)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberInitExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberInitExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateLambdaBody(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP ERR] 14:57:45 HTTP GET /tenants responded 500 in 1372.1284 ms
+MongoDB.Driver.Linq.ExpressionNotSupportedException: Expression not supported: Convert(t.CreatedBy, UserInfoDto) because conversion to ScaleUp.Core.Api.Base.Dtos.UserInfoDto is not supported.
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ConvertExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, UnaryExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberInitExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression, NewExpression newExpression, IReadOnlyList`1 bindings)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberInitExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberInitExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateLambdaBody(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Tenants.GetList.GetTenantsHandler.Handle(GetTenantsQuery request, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\GetList\GetTenantsHandler.cs:line 12
+   at ScaleUp.Core.Api.Features.Tenants.EndpointBuilder.<>c.<<MapEndpoint>b__0_0>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\EndpointBuilder.cs:line 22
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 14:57:45 An unhandled exception has occurred while executing the request.
+MongoDB.Driver.Linq.ExpressionNotSupportedException: Expression not supported: Convert(t.CreatedBy, UserInfoDto) because conversion to ScaleUp.Core.Api.Base.Dtos.UserInfoDto is not supported.
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ConvertExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, UnaryExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberInitExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression, NewExpression newExpression, IReadOnlyList`1 bindings)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberInitExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberInitExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateLambdaBody(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Tenants.GetList.GetTenantsHandler.Handle(GetTenantsQuery request, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\GetList\GetTenantsHandler.cs:line 12
+   at ScaleUp.Core.Api.Features.Tenants.EndpointBuilder.<>c.<<MapEndpoint>b__0_0>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\EndpointBuilder.cs:line 22
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP ERR] 14:58:30 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+MongoDB.Driver.Linq.ExpressionNotSupportedException: Expression not supported: Convert(t.CreatedBy, UserInfoDto) because conversion to ScaleUp.Core.Api.Base.Dtos.UserInfoDto is not supported.
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ConvertExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, UnaryExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberInitExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression, NewExpression newExpression, IReadOnlyList`1 bindings)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberInitExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberInitExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateLambdaBody(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+MongoDB.Driver.Linq.ExpressionNotSupportedException: Expression not supported: Convert(t.CreatedBy, UserInfoDto) because conversion to ScaleUp.Core.Api.Base.Dtos.UserInfoDto is not supported.
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ConvertExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, UnaryExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberInitExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression, NewExpression newExpression, IReadOnlyList`1 bindings)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberInitExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberInitExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateLambdaBody(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP ERR] 15:00:07 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+MongoDB.Driver.Linq.ExpressionNotSupportedException: Expression not supported: Convert(t.CreatedAt, DateTimeOffset) because conversion to System.DateTimeOffset is not supported.
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ConvertExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, UnaryExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberInitExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression, NewExpression newExpression, IReadOnlyList`1 bindings)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberInitExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberInitExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateLambdaBody(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+MongoDB.Driver.Linq.ExpressionNotSupportedException: Expression not supported: Convert(t.CreatedAt, DateTimeOffset) because conversion to System.DateTimeOffset is not supported.
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ConvertExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, UnaryExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberInitExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression, NewExpression newExpression, IReadOnlyList`1 bindings)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberInitExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberInitExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateLambdaBody(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP INF] 15:00:44 HTTP GET /tenants responded 200 in 6819.7340 ms
+[SCALEUP INF] 15:01:00 HTTP POST /tenants responded 200 in 267.8833 ms
+[SCALEUP INF] 15:01:03 HTTP POST /tenants responded 200 in 15.0414 ms
+[SCALEUP INF] 15:01:06 HTTP POST /tenants responded 200 in 5.3696 ms
+[SCALEUP INF] 15:01:13 HTTP GET /tenants responded 200 in 2325.7510 ms
+[SCALEUP INF] 15:01:27 HTTP DELETE /tenants/d18b1c8d-963e-459e-a034-0df1f9e54c15 responded 200 in 117.8439 ms
+[SCALEUP INF] 15:01:31 HTTP GET /tenants responded 200 in 4.2318 ms
+[SCALEUP INF] 15:01:39 HTTP GET /tenants/bddc0c6d-a36a-4f49-8e24-30118332c8b5 responded 200 in 27.0093 ms
+[SCALEUP ERR] 15:02:22 HTTP PUT /tenants/bddc0c6d-a36a-4f49-8e24-30118332c8b5 responded 500 in 10.5330 ms
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "UpdateTenantRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to System.Nullable`1[System.DateTime]. Path: $.activationEndDate | LineNumber: 3 | BytePositionInLine: 35.
+ ---> System.FormatException: The JSON value is not in a supported DateTime format.
+   at System.Text.Json.ThrowHelper.ThrowFormatException(DataType dataType)
+   at System.Text.Json.Utf8JsonReader.GetDateTime()
+   at System.Text.Json.Serialization.Converters.NullableConverter`1.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 15:02:22 An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "UpdateTenantRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to System.Nullable`1[System.DateTime]. Path: $.activationEndDate | LineNumber: 3 | BytePositionInLine: 35.
+ ---> System.FormatException: The JSON value is not in a supported DateTime format.
+   at System.Text.Json.ThrowHelper.ThrowFormatException(DataType dataType)
+   at System.Text.Json.Utf8JsonReader.GetDateTime()
+   at System.Text.Json.Serialization.Converters.NullableConverter`1.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP INF] 15:02:27 HTTP PUT /tenants/bddc0c6d-a36a-4f49-8e24-30118332c8b5 responded 200 in 23.1423 ms
+[SCALEUP INF] 15:02:31 HTTP GET /tenants responded 200 in 4.8387 ms
+[SCALEUP INF] 17:49:54 HTTP GET /orders/status responded 200 in 70.5623 ms
+[SCALEUP INF] 17:49:56 HTTP GET /orders responded 200 in 2214.2219 ms
+[SCALEUP ERR] 17:50:00 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+System.InvalidOperationException: Document element is null for required non-nullable property 'Sku'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method395(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method392(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+System.InvalidOperationException: Document element is null for required non-nullable property 'Sku'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method395(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method392(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()

@@ -1,0 +1,16 @@
+D:\Workspace\scaleup-core\src\Integrations\ScaleUp.Integrations.Haravan\bin\Debug\net8.0\ScaleUp.Integrations.Haravan.deps.json
+D:\Workspace\scaleup-core\src\Integrations\ScaleUp.Integrations.Haravan\bin\Debug\net8.0\ScaleUp.Integrations.Haravan.dll
+D:\Workspace\scaleup-core\src\Integrations\ScaleUp.Integrations.Haravan\bin\Debug\net8.0\ScaleUp.Integrations.Haravan.pdb
+D:\Workspace\scaleup-core\src\Integrations\ScaleUp.Integrations.Haravan\bin\Debug\net8.0\ScaleUp.Core.SharedKernel.dll
+D:\Workspace\scaleup-core\src\Integrations\ScaleUp.Integrations.Haravan\bin\Debug\net8.0\ScaleUp.Core.SharedKernel.pdb
+D:\Workspace\scaleup-core\src\Integrations\ScaleUp.Integrations.Haravan\obj\Debug\net8.0\ScaleUp.Integrations.Haravan.csproj.AssemblyReference.cache
+D:\Workspace\scaleup-core\src\Integrations\ScaleUp.Integrations.Haravan\obj\Debug\net8.0\ScaleUp.Integrations.Haravan.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\scaleup-core\src\Integrations\ScaleUp.Integrations.Haravan\obj\Debug\net8.0\ScaleUp.Integrations.Haravan.AssemblyInfoInputs.cache
+D:\Workspace\scaleup-core\src\Integrations\ScaleUp.Integrations.Haravan\obj\Debug\net8.0\ScaleUp.Integrations.Haravan.AssemblyInfo.cs
+D:\Workspace\scaleup-core\src\Integrations\ScaleUp.Integrations.Haravan\obj\Debug\net8.0\ScaleUp.Integrations.Haravan.csproj.CoreCompileInputs.cache
+D:\Workspace\scaleup-core\src\Integrations\ScaleUp.Integrations.Haravan\obj\Debug\net8.0\ScaleUp.Integrations.Haravan.sourcelink.json
+D:\Workspace\scaleup-core\src\Integrations\ScaleUp.Integrations.Haravan\obj\Debug\net8.0\ScaleUp..2A2B4693.Up2Date
+D:\Workspace\scaleup-core\src\Integrations\ScaleUp.Integrations.Haravan\obj\Debug\net8.0\ScaleUp.Integrations.Haravan.dll
+D:\Workspace\scaleup-core\src\Integrations\ScaleUp.Integrations.Haravan\obj\Debug\net8.0\refint\ScaleUp.Integrations.Haravan.dll
+D:\Workspace\scaleup-core\src\Integrations\ScaleUp.Integrations.Haravan\obj\Debug\net8.0\ScaleUp.Integrations.Haravan.pdb
+D:\Workspace\scaleup-core\src\Integrations\ScaleUp.Integrations.Haravan\obj\Debug\net8.0\ref\ScaleUp.Integrations.Haravan.dll

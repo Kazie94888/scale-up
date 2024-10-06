@@ -1,0 +1,31 @@
+{
+  "OrderCancelReasonConfigurations": {
+    "Values": [
+      {
+        "Code": "customer",
+        "Description": "Customer",
+        "Index": 1
+      },
+      {
+        "Code": "inventory",
+        "Description": "Inventory",
+        "Index": 2
+      },
+      {
+        "Code": "fraud",
+        "Description": "Fraud",
+        "Index": 3
+      },
+      {
+        "Code": "declined",
+        "Description": "Declined",
+        "Index": 4
+      },
+      {
+        "Code": "other",
+        "Description": "Other",
+        "Index": 5
+      }
+    ]
+  }
+}

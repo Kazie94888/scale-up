@@ -1,0 +1,1552 @@
+[SCALEUP INF] 09:30:15 HTTP GET /favicon.ico responded 404 in 0.5000 ms
+[SCALEUP ERR] 14:58:13 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+System.InvalidOperationException: Document element is null for required non-nullable property 'ContactPhone'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+System.InvalidOperationException: Document element is null for required non-nullable property 'ContactPhone'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP ERR] 14:58:13 HTTP GET /orders/C8D2E32F-228E-48B9-A8CF-91B4DF122EB3 responded 500 in 4216.7572 ms
+System.InvalidOperationException: Document element is null for required non-nullable property 'ContactPhone'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Orders.Get.GetOrderDetailsQueryHandler.Handle(GetOrderDetailsQuery request, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\Get\GetOrderDetailsQueryHandler.cs:line 16
+   at ScaleUp.Core.Api.Features.Orders.EndpointBuilder.<>c.<<MapEndpoint>b__0_1>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\EndpointBuilder.cs:line 40
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 14:58:13 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Document element is null for required non-nullable property 'ContactPhone'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Orders.Get.GetOrderDetailsQueryHandler.Handle(GetOrderDetailsQuery request, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\Get\GetOrderDetailsQueryHandler.cs:line 16
+   at ScaleUp.Core.Api.Features.Orders.EndpointBuilder.<>c.<<MapEndpoint>b__0_1>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\EndpointBuilder.cs:line 40
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP INF] 15:00:39 HTTP GET /orders/C8D2E32F-228E-48B9-A8CF-91B4DF122EB3 responded 200 in 1799.6351 ms
+[SCALEUP ERR] 15:03:59 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+System.InvalidOperationException: Document element is null for required non-nullable property 'Sku'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method387(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method385(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+System.InvalidOperationException: Document element is null for required non-nullable property 'Sku'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method387(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method385(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP ERR] 15:03:59 HTTP GET /orders responded 500 in 613.9407 ms
+System.InvalidOperationException: Document element is null for required non-nullable property 'Sku'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method387(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method385(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Orders.GetList.GetOrdersQueryHandler.Handle(GetOrdersQuery query, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\GetList\GetOrdersQueryHandler.cs:line 15
+   at ScaleUp.Core.Api.Features.Orders.EndpointBuilder.<>c.<<MapEndpoint>b__0_0>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\EndpointBuilder.cs:line 30
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 15:03:59 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Document element is null for required non-nullable property 'Sku'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method387(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method385(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Orders.GetList.GetOrdersQueryHandler.Handle(GetOrdersQuery query, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\GetList\GetOrdersQueryHandler.cs:line 15
+   at ScaleUp.Core.Api.Features.Orders.EndpointBuilder.<>c.<<MapEndpoint>b__0_0>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\EndpointBuilder.cs:line 30
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP ERR] 15:06:58 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+System.InvalidOperationException: Document element is null for required non-nullable property 'District'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method365(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+System.InvalidOperationException: Document element is null for required non-nullable property 'District'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method365(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP ERR] 15:06:58 HTTP GET /orders responded 500 in 2178.9868 ms
+System.InvalidOperationException: Document element is null for required non-nullable property 'District'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method365(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Orders.GetList.GetOrdersQueryHandler.Handle(GetOrdersQuery query, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\GetList\GetOrdersQueryHandler.cs:line 15
+   at ScaleUp.Core.Api.Features.Orders.EndpointBuilder.<>c.<<MapEndpoint>b__0_0>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\EndpointBuilder.cs:line 30
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 15:06:58 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Document element is null for required non-nullable property 'District'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method365(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Orders.GetList.GetOrdersQueryHandler.Handle(GetOrdersQuery query, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\GetList\GetOrdersQueryHandler.cs:line 15
+   at ScaleUp.Core.Api.Features.Orders.EndpointBuilder.<>c.<<MapEndpoint>b__0_0>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\EndpointBuilder.cs:line 30
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP ERR] 15:09:49 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+System.InvalidOperationException: Document element is null for required non-nullable property 'District'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method365(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+System.InvalidOperationException: Document element is null for required non-nullable property 'District'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method365(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP ERR] 15:09:49 HTTP GET /orders responded 500 in 482.1001 ms
+System.InvalidOperationException: Document element is null for required non-nullable property 'District'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method365(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Orders.GetList.GetOrdersQueryHandler.Handle(GetOrdersQuery query, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\GetList\GetOrdersQueryHandler.cs:line 15
+   at ScaleUp.Core.Api.Features.Orders.EndpointBuilder.<>c.<<MapEndpoint>b__0_0>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\EndpointBuilder.cs:line 30
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 15:09:49 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Document element is null for required non-nullable property 'District'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method365(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Orders.GetList.GetOrdersQueryHandler.Handle(GetOrdersQuery query, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\GetList\GetOrdersQueryHandler.cs:line 15
+   at ScaleUp.Core.Api.Features.Orders.EndpointBuilder.<>c.<<MapEndpoint>b__0_0>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\EndpointBuilder.cs:line 30
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP INF] 15:10:32 HTTP GET /orders/CD578ADD-21F4-4DE8-A2C6-332796B9BAF5 responded 200 in 215.5197 ms
+[SCALEUP ERR] 15:10:42 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+System.InvalidOperationException: Document element is null for required non-nullable property 'District'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method365(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+System.InvalidOperationException: Document element is null for required non-nullable property 'District'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method365(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP ERR] 15:10:42 HTTP GET /orders responded 500 in 236.9056 ms
+System.InvalidOperationException: Document element is null for required non-nullable property 'District'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method365(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Orders.GetList.GetOrdersQueryHandler.Handle(GetOrdersQuery query, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\GetList\GetOrdersQueryHandler.cs:line 15
+   at ScaleUp.Core.Api.Features.Orders.EndpointBuilder.<>c.<<MapEndpoint>b__0_0>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\EndpointBuilder.cs:line 30
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 15:10:42 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Document element is null for required non-nullable property 'District'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method365(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Orders.GetList.GetOrdersQueryHandler.Handle(GetOrdersQuery query, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\GetList\GetOrdersQueryHandler.cs:line 15
+   at ScaleUp.Core.Api.Features.Orders.EndpointBuilder.<>c.<<MapEndpoint>b__0_0>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\EndpointBuilder.cs:line 30
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP INF] 15:10:46 HTTP GET /orders responded 200 in 221.7920 ms
+[SCALEUP INF] 15:10:53 HTTP GET /orders responded 200 in 256.2352 ms
+[SCALEUP INF] 15:10:55 HTTP GET /orders responded 200 in 197.9924 ms
+[SCALEUP INF] 15:10:57 HTTP GET /orders responded 200 in 262.6365 ms
+[SCALEUP ERR] 15:10:59 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+System.InvalidOperationException: Document element is null for required non-nullable property 'District'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method365(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+System.InvalidOperationException: Document element is null for required non-nullable property 'District'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method365(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP ERR] 15:10:59 HTTP GET /orders responded 500 in 235.2589 ms
+System.InvalidOperationException: Document element is null for required non-nullable property 'District'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method365(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Orders.GetList.GetOrdersQueryHandler.Handle(GetOrdersQuery query, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\GetList\GetOrdersQueryHandler.cs:line 15
+   at ScaleUp.Core.Api.Features.Orders.EndpointBuilder.<>c.<<MapEndpoint>b__0_0>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\EndpointBuilder.cs:line 30
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 15:10:59 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Document element is null for required non-nullable property 'District'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method365(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Orders.GetList.GetOrdersQueryHandler.Handle(GetOrdersQuery query, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\GetList\GetOrdersQueryHandler.cs:line 15
+   at ScaleUp.Core.Api.Features.Orders.EndpointBuilder.<>c.<<MapEndpoint>b__0_0>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\EndpointBuilder.cs:line 30
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP INF] 15:11:07 HTTP GET /orders responded 200 in 268.0937 ms
+[SCALEUP INF] 15:14:52 HTTP POST /orders/FF4F10FA-71ED-4BFF-AD2C-8D6F9439F421/confirm responded 405 in 0.5652 ms
+[SCALEUP INF] 15:15:12 HTTP POST /orders/FF4F10FA-71ED-4BFF-AD2C-8D6F9439F421/confirm responded 405 in 1.3921 ms
+[SCALEUP INF] 15:15:26 HTTP POST /orders/654BB314-39E2-4E37-837B-B5AFBD0165F2/confirm responded 405 in 0.0152 ms
+[SCALEUP ERR] 15:15:48 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+System.InvalidOperationException: Document element is null for required non-nullable property 'District'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method365(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+System.InvalidOperationException: Document element is null for required non-nullable property 'District'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method365(Closure, BsonDocument, Int32)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at MongoDB.EntityFrameworkCore.Query.Visitors.ProjectionBindingRemovingExpressionVisitor.PopulateCollection[TEntity,TCollection](IClrCollectionAccessor accessor, IEnumerable`1 entities)
+   at lambda_method360(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP FTL] 15:26:19 Application startup exception
+System.InvalidOperationException: Failure to infer one or more parameters.
+Below is the list of parameters that we found: 
+
+Parameter           | Source                        
+---------------------------------------------------------------------------------
+mediator            | Services (Inferred)
+OrderId             | Route (Attribute)
+Request             | Body (Attribute)
+UserInfo            | UNKNOWN        
+command             | As Parameter (Attribute)
+
+
+Did you mean to register the "UNKNOWN" parameters as a Service?
+
+
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArguments(ParameterInfo[] parameters, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArgumentsAndInferMetadata(MethodInfo methodInfo, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.InferMetadata(MethodInfo methodInfo, RequestDelegateFactoryOptions options)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.CreateRouteEndpointBuilder(RouteEntry entry, RoutePattern groupPrefix, IReadOnlyList`1 groupConventions, IReadOnlyList`1 groupFinallyConventions)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.CreateEndpointsUnsynchronized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.EnsureEndpointsInitialized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.EnsureInitialized()
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationPolicyCache..ctor(EndpointDataSource dataSource)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware..ctor(RequestDelegate next, IAuthorizationPolicyProvider policyProvider, IServiceProvider services)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddlewareInternal..ctor(RequestDelegate next, IServiceProvider services, IAuthorizationPolicyProvider policyProvider, ILogger`1 logger)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+[SCALEUP ERR] 15:26:19 Hosting failed to start
+System.InvalidOperationException: Failure to infer one or more parameters.
+Below is the list of parameters that we found: 
+
+Parameter           | Source                        
+---------------------------------------------------------------------------------
+mediator            | Services (Inferred)
+OrderId             | Route (Attribute)
+Request             | Body (Attribute)
+UserInfo            | UNKNOWN        
+command             | As Parameter (Attribute)
+
+
+Did you mean to register the "UNKNOWN" parameters as a Service?
+
+
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArguments(ParameterInfo[] parameters, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArgumentsAndInferMetadata(MethodInfo methodInfo, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.InferMetadata(MethodInfo methodInfo, RequestDelegateFactoryOptions options)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.CreateRouteEndpointBuilder(RouteEntry entry, RoutePattern groupPrefix, IReadOnlyList`1 groupConventions, IReadOnlyList`1 groupFinallyConventions)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.CreateEndpointsUnsynchronized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.EnsureEndpointsInitialized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.EnsureInitialized()
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationPolicyCache..ctor(EndpointDataSource dataSource)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware..ctor(RequestDelegate next, IAuthorizationPolicyProvider policyProvider, IServiceProvider services)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddlewareInternal..ctor(RequestDelegate next, IServiceProvider services, IAuthorizationPolicyProvider policyProvider, ILogger`1 logger)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[SCALEUP FTL] 15:27:17 Application startup exception
+System.InvalidOperationException: Failure to infer one or more parameters.
+Below is the list of parameters that we found: 
+
+Parameter           | Source                        
+---------------------------------------------------------------------------------
+mediator            | Services (Inferred)
+OrderId             | Route (Attribute)
+Request             | Body (Attribute)
+UserInfo            | UNKNOWN        
+command             | As Parameter (Attribute)
+
+
+Did you mean to register the "UNKNOWN" parameters as a Service?
+
+
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArguments(ParameterInfo[] parameters, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArgumentsAndInferMetadata(MethodInfo methodInfo, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.InferMetadata(MethodInfo methodInfo, RequestDelegateFactoryOptions options)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.CreateRouteEndpointBuilder(RouteEntry entry, RoutePattern groupPrefix, IReadOnlyList`1 groupConventions, IReadOnlyList`1 groupFinallyConventions)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.CreateEndpointsUnsynchronized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.EnsureEndpointsInitialized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.EnsureInitialized()
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationPolicyCache..ctor(EndpointDataSource dataSource)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware..ctor(RequestDelegate next, IAuthorizationPolicyProvider policyProvider, IServiceProvider services)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddlewareInternal..ctor(RequestDelegate next, IServiceProvider services, IAuthorizationPolicyProvider policyProvider, ILogger`1 logger)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+[SCALEUP ERR] 15:27:18 Hosting failed to start
+System.InvalidOperationException: Failure to infer one or more parameters.
+Below is the list of parameters that we found: 
+
+Parameter           | Source                        
+---------------------------------------------------------------------------------
+mediator            | Services (Inferred)
+OrderId             | Route (Attribute)
+Request             | Body (Attribute)
+UserInfo            | UNKNOWN        
+command             | As Parameter (Attribute)
+
+
+Did you mean to register the "UNKNOWN" parameters as a Service?
+
+
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArguments(ParameterInfo[] parameters, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArgumentsAndInferMetadata(MethodInfo methodInfo, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.InferMetadata(MethodInfo methodInfo, RequestDelegateFactoryOptions options)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.CreateRouteEndpointBuilder(RouteEntry entry, RoutePattern groupPrefix, IReadOnlyList`1 groupConventions, IReadOnlyList`1 groupFinallyConventions)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.CreateEndpointsUnsynchronized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.EnsureEndpointsInitialized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.EnsureInitialized()
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationPolicyCache..ctor(EndpointDataSource dataSource)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware..ctor(RequestDelegate next, IAuthorizationPolicyProvider policyProvider, IServiceProvider services)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddlewareInternal..ctor(RequestDelegate next, IServiceProvider services, IAuthorizationPolicyProvider policyProvider, ILogger`1 logger)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[SCALEUP FTL] 15:28:20 Application startup exception
+System.InvalidOperationException: Failure to infer one or more parameters.
+Below is the list of parameters that we found: 
+
+Parameter           | Source                        
+---------------------------------------------------------------------------------
+mediator            | Services (Inferred)
+OrderId             | Route (Attribute)
+Request             | Body (Attribute)
+UserInfo            | UNKNOWN        
+command             | As Parameter (Attribute)
+
+
+Did you mean to register the "UNKNOWN" parameters as a Service?
+
+
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArguments(ParameterInfo[] parameters, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArgumentsAndInferMetadata(MethodInfo methodInfo, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.InferMetadata(MethodInfo methodInfo, RequestDelegateFactoryOptions options)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.CreateRouteEndpointBuilder(RouteEntry entry, RoutePattern groupPrefix, IReadOnlyList`1 groupConventions, IReadOnlyList`1 groupFinallyConventions)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.CreateEndpointsUnsynchronized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.EnsureEndpointsInitialized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.EnsureInitialized()
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationPolicyCache..ctor(EndpointDataSource dataSource)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware..ctor(RequestDelegate next, IAuthorizationPolicyProvider policyProvider, IServiceProvider services)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddlewareInternal..ctor(RequestDelegate next, IServiceProvider services, IAuthorizationPolicyProvider policyProvider, ILogger`1 logger)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+[SCALEUP ERR] 15:28:20 Hosting failed to start
+System.InvalidOperationException: Failure to infer one or more parameters.
+Below is the list of parameters that we found: 
+
+Parameter           | Source                        
+---------------------------------------------------------------------------------
+mediator            | Services (Inferred)
+OrderId             | Route (Attribute)
+Request             | Body (Attribute)
+UserInfo            | UNKNOWN        
+command             | As Parameter (Attribute)
+
+
+Did you mean to register the "UNKNOWN" parameters as a Service?
+
+
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArguments(ParameterInfo[] parameters, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArgumentsAndInferMetadata(MethodInfo methodInfo, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.InferMetadata(MethodInfo methodInfo, RequestDelegateFactoryOptions options)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.CreateRouteEndpointBuilder(RouteEntry entry, RoutePattern groupPrefix, IReadOnlyList`1 groupConventions, IReadOnlyList`1 groupFinallyConventions)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.CreateEndpointsUnsynchronized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.EnsureEndpointsInitialized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.EnsureInitialized()
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationPolicyCache..ctor(EndpointDataSource dataSource)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware..ctor(RequestDelegate next, IAuthorizationPolicyProvider policyProvider, IServiceProvider services)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddlewareInternal..ctor(RequestDelegate next, IServiceProvider services, IAuthorizationPolicyProvider policyProvider, ILogger`1 logger)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[SCALEUP FTL] 15:31:27 Application startup exception
+System.InvalidOperationException: Failure to infer one or more parameters.
+Below is the list of parameters that we found: 
+
+Parameter           | Source                        
+---------------------------------------------------------------------------------
+mediator            | Services (Inferred)
+OrderId             | Route (Attribute)
+Request             | Body (Attribute)
+UserInfo            | UNKNOWN        
+command             | As Parameter (Attribute)
+
+
+Did you mean to register the "UNKNOWN" parameters as a Service?
+
+
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArguments(ParameterInfo[] parameters, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArgumentsAndInferMetadata(MethodInfo methodInfo, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.InferMetadata(MethodInfo methodInfo, RequestDelegateFactoryOptions options)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.CreateRouteEndpointBuilder(RouteEntry entry, RoutePattern groupPrefix, IReadOnlyList`1 groupConventions, IReadOnlyList`1 groupFinallyConventions)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.CreateEndpointsUnsynchronized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.EnsureEndpointsInitialized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.EnsureInitialized()
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationPolicyCache..ctor(EndpointDataSource dataSource)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware..ctor(RequestDelegate next, IAuthorizationPolicyProvider policyProvider, IServiceProvider services)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddlewareInternal..ctor(RequestDelegate next, IServiceProvider services, IAuthorizationPolicyProvider policyProvider, ILogger`1 logger)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+[SCALEUP ERR] 15:31:27 Hosting failed to start
+System.InvalidOperationException: Failure to infer one or more parameters.
+Below is the list of parameters that we found: 
+
+Parameter           | Source                        
+---------------------------------------------------------------------------------
+mediator            | Services (Inferred)
+OrderId             | Route (Attribute)
+Request             | Body (Attribute)
+UserInfo            | UNKNOWN        
+command             | As Parameter (Attribute)
+
+
+Did you mean to register the "UNKNOWN" parameters as a Service?
+
+
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArguments(ParameterInfo[] parameters, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArgumentsAndInferMetadata(MethodInfo methodInfo, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.InferMetadata(MethodInfo methodInfo, RequestDelegateFactoryOptions options)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.CreateRouteEndpointBuilder(RouteEntry entry, RoutePattern groupPrefix, IReadOnlyList`1 groupConventions, IReadOnlyList`1 groupFinallyConventions)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.CreateEndpointsUnsynchronized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.EnsureEndpointsInitialized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.EnsureInitialized()
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationPolicyCache..ctor(EndpointDataSource dataSource)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware..ctor(RequestDelegate next, IAuthorizationPolicyProvider policyProvider, IServiceProvider services)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddlewareInternal..ctor(RequestDelegate next, IServiceProvider services, IAuthorizationPolicyProvider policyProvider, ILogger`1 logger)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[SCALEUP FTL] 15:39:02 Application startup exception
+System.InvalidOperationException: Failure to infer one or more parameters.
+Below is the list of parameters that we found: 
+
+Parameter           | Source                        
+---------------------------------------------------------------------------------
+mediator            | Services (Inferred)
+OrderId             | Route (Attribute)
+Request             | Body (Attribute)
+UserInfo            | UNKNOWN        
+command             | As Parameter (Attribute)
+
+
+Did you mean to register the "UNKNOWN" parameters as a Service?
+
+
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArguments(ParameterInfo[] parameters, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArgumentsAndInferMetadata(MethodInfo methodInfo, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.InferMetadata(MethodInfo methodInfo, RequestDelegateFactoryOptions options)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.CreateRouteEndpointBuilder(RouteEntry entry, RoutePattern groupPrefix, IReadOnlyList`1 groupConventions, IReadOnlyList`1 groupFinallyConventions)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.CreateEndpointsUnsynchronized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.EnsureEndpointsInitialized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.EnsureInitialized()
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationPolicyCache..ctor(EndpointDataSource dataSource)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware..ctor(RequestDelegate next, IAuthorizationPolicyProvider policyProvider, IServiceProvider services)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddlewareInternal..ctor(RequestDelegate next, IServiceProvider services, IAuthorizationPolicyProvider policyProvider, ILogger`1 logger)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+[SCALEUP ERR] 15:39:02 Hosting failed to start
+System.InvalidOperationException: Failure to infer one or more parameters.
+Below is the list of parameters that we found: 
+
+Parameter           | Source                        
+---------------------------------------------------------------------------------
+mediator            | Services (Inferred)
+OrderId             | Route (Attribute)
+Request             | Body (Attribute)
+UserInfo            | UNKNOWN        
+command             | As Parameter (Attribute)
+
+
+Did you mean to register the "UNKNOWN" parameters as a Service?
+
+
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArguments(ParameterInfo[] parameters, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArgumentsAndInferMetadata(MethodInfo methodInfo, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.InferMetadata(MethodInfo methodInfo, RequestDelegateFactoryOptions options)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.CreateRouteEndpointBuilder(RouteEntry entry, RoutePattern groupPrefix, IReadOnlyList`1 groupConventions, IReadOnlyList`1 groupFinallyConventions)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.CreateEndpointsUnsynchronized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.EnsureEndpointsInitialized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.EnsureInitialized()
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationPolicyCache..ctor(EndpointDataSource dataSource)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware..ctor(RequestDelegate next, IAuthorizationPolicyProvider policyProvider, IServiceProvider services)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddlewareInternal..ctor(RequestDelegate next, IServiceProvider services, IAuthorizationPolicyProvider policyProvider, ILogger`1 logger)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[SCALEUP FTL] 15:41:08 Application startup exception
+System.InvalidOperationException: Failure to infer one or more parameters.
+Below is the list of parameters that we found: 
+
+Parameter           | Source                        
+---------------------------------------------------------------------------------
+mediator            | Services (Inferred)
+OrderId             | Route (Attribute)
+Request             | Body (Attribute)
+UserInfo            | UNKNOWN        
+command             | As Parameter (Attribute)
+
+
+Did you mean to register the "UNKNOWN" parameters as a Service?
+
+
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArguments(ParameterInfo[] parameters, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArgumentsAndInferMetadata(MethodInfo methodInfo, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.InferMetadata(MethodInfo methodInfo, RequestDelegateFactoryOptions options)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.CreateRouteEndpointBuilder(RouteEntry entry, RoutePattern groupPrefix, IReadOnlyList`1 groupConventions, IReadOnlyList`1 groupFinallyConventions)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.CreateEndpointsUnsynchronized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.EnsureEndpointsInitialized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.EnsureInitialized()
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationPolicyCache..ctor(EndpointDataSource dataSource)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware..ctor(RequestDelegate next, IAuthorizationPolicyProvider policyProvider, IServiceProvider services)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddlewareInternal..ctor(RequestDelegate next, IServiceProvider services, IAuthorizationPolicyProvider policyProvider, ILogger`1 logger)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+[SCALEUP ERR] 15:41:08 Hosting failed to start
+System.InvalidOperationException: Failure to infer one or more parameters.
+Below is the list of parameters that we found: 
+
+Parameter           | Source                        
+---------------------------------------------------------------------------------
+mediator            | Services (Inferred)
+OrderId             | Route (Attribute)
+Request             | Body (Attribute)
+UserInfo            | UNKNOWN        
+command             | As Parameter (Attribute)
+
+
+Did you mean to register the "UNKNOWN" parameters as a Service?
+
+
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArguments(ParameterInfo[] parameters, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArgumentsAndInferMetadata(MethodInfo methodInfo, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.InferMetadata(MethodInfo methodInfo, RequestDelegateFactoryOptions options)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.CreateRouteEndpointBuilder(RouteEntry entry, RoutePattern groupPrefix, IReadOnlyList`1 groupConventions, IReadOnlyList`1 groupFinallyConventions)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.CreateEndpointsUnsynchronized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.EnsureEndpointsInitialized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.EnsureInitialized()
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationPolicyCache..ctor(EndpointDataSource dataSource)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware..ctor(RequestDelegate next, IAuthorizationPolicyProvider policyProvider, IServiceProvider services)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddlewareInternal..ctor(RequestDelegate next, IServiceProvider services, IAuthorizationPolicyProvider policyProvider, ILogger`1 logger)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[SCALEUP ERR] 15:41:52 Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5111: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[SCALEUP FTL] 15:42:41 Application startup exception
+System.InvalidOperationException: Failure to infer one or more parameters.
+Below is the list of parameters that we found: 
+
+Parameter           | Source                        
+---------------------------------------------------------------------------------
+mediator            | Services (Inferred)
+OrderId             | Route (Attribute)
+Request             | Body (Attribute)
+UserInfo            | UNKNOWN        
+command             | As Parameter (Attribute)
+
+
+Did you mean to register the "UNKNOWN" parameters as a Service?
+
+
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArguments(ParameterInfo[] parameters, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArgumentsAndInferMetadata(MethodInfo methodInfo, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.InferMetadata(MethodInfo methodInfo, RequestDelegateFactoryOptions options)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.CreateRouteEndpointBuilder(RouteEntry entry, RoutePattern groupPrefix, IReadOnlyList`1 groupConventions, IReadOnlyList`1 groupFinallyConventions)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.CreateEndpointsUnsynchronized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.EnsureEndpointsInitialized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.EnsureInitialized()
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationPolicyCache..ctor(EndpointDataSource dataSource)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware..ctor(RequestDelegate next, IAuthorizationPolicyProvider policyProvider, IServiceProvider services)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddlewareInternal..ctor(RequestDelegate next, IServiceProvider services, IAuthorizationPolicyProvider policyProvider, ILogger`1 logger)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+[SCALEUP ERR] 15:42:41 Hosting failed to start
+System.InvalidOperationException: Failure to infer one or more parameters.
+Below is the list of parameters that we found: 
+
+Parameter           | Source                        
+---------------------------------------------------------------------------------
+mediator            | Services (Inferred)
+OrderId             | Route (Attribute)
+Request             | Body (Attribute)
+UserInfo            | UNKNOWN        
+command             | As Parameter (Attribute)
+
+
+Did you mean to register the "UNKNOWN" parameters as a Service?
+
+
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArguments(ParameterInfo[] parameters, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.CreateArgumentsAndInferMetadata(MethodInfo methodInfo, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.InferMetadata(MethodInfo methodInfo, RequestDelegateFactoryOptions options)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.CreateRouteEndpointBuilder(RouteEntry entry, RoutePattern groupPrefix, IReadOnlyList`1 groupConventions, IReadOnlyList`1 groupFinallyConventions)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.CreateEndpointsUnsynchronized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.EnsureEndpointsInitialized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.EnsureInitialized()
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationPolicyCache..ctor(EndpointDataSource dataSource)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware..ctor(RequestDelegate next, IAuthorizationPolicyProvider policyProvider, IServiceProvider services)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddlewareInternal..ctor(RequestDelegate next, IServiceProvider services, IAuthorizationPolicyProvider policyProvider, ILogger`1 logger)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[SCALEUP FTL] 15:44:40 Application startup exception
+System.InvalidOperationException: The JSON property name for 'ScaleUp.Core.Api.Features.Orders.UpdateDelivery.UpdateOrderDeliveryRequest.addressLine1' collides with another property.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_SerializerPropertyNameConflict(Type type, String propertyName)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo.JsonPropertyInfoList.AddPropertyWithConflictResolution(JsonPropertyInfo jsonPropertyInfo, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.HandleRequestBodyAndCompileRequestDelegateForJson(Expression responseWritingMethodCall, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Create(Delegate handler, RequestDelegateFactoryOptions options, RequestDelegateMetadataResult metadataResult)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.CreateRouteEndpointBuilder(RouteEntry entry, RoutePattern groupPrefix, IReadOnlyList`1 groupConventions, IReadOnlyList`1 groupFinallyConventions)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.CreateEndpointsUnsynchronized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.EnsureEndpointsInitialized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.EnsureInitialized()
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationPolicyCache..ctor(EndpointDataSource dataSource)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware..ctor(RequestDelegate next, IAuthorizationPolicyProvider policyProvider, IServiceProvider services)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddlewareInternal..ctor(RequestDelegate next, IServiceProvider services, IAuthorizationPolicyProvider policyProvider, ILogger`1 logger)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+[SCALEUP ERR] 15:44:40 Hosting failed to start
+System.InvalidOperationException: The JSON property name for 'ScaleUp.Core.Api.Features.Orders.UpdateDelivery.UpdateOrderDeliveryRequest.addressLine1' collides with another property.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_SerializerPropertyNameConflict(Type type, String propertyName)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo.JsonPropertyInfoList.AddPropertyWithConflictResolution(JsonPropertyInfo jsonPropertyInfo, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.HandleRequestBodyAndCompileRequestDelegateForJson(Expression responseWritingMethodCall, RequestDelegateFactoryContext factoryContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Create(Delegate handler, RequestDelegateFactoryOptions options, RequestDelegateMetadataResult metadataResult)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.CreateRouteEndpointBuilder(RouteEntry entry, RoutePattern groupPrefix, IReadOnlyList`1 groupConventions, IReadOnlyList`1 groupFinallyConventions)
+   at Microsoft.AspNetCore.Routing.RouteEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.CreateEndpointsUnsynchronized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.EnsureEndpointsInitialized()
+   at Microsoft.AspNetCore.Routing.CompositeEndpointDataSource.get_Endpoints()
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.Initialize()
+   at System.Threading.LazyInitializer.EnsureInitializedCore[T](T& target, Boolean& initialized, Object& syncLock, Func`1 valueFactory)
+   at Microsoft.AspNetCore.Routing.DataSourceDependentCache`1.EnsureInitialized()
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationPolicyCache..ctor(EndpointDataSource dataSource)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware..ctor(RequestDelegate next, IAuthorizationPolicyProvider policyProvider, IServiceProvider services)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddlewareInternal..ctor(RequestDelegate next, IServiceProvider services, IAuthorizationPolicyProvider policyProvider, ILogger`1 logger)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[SCALEUP ERR] 15:49:40 HTTP PUT /orders/654BB314-39E2-4E37-837B-B5AFBD0165F2/delivery responded 500 in 17.9006 ms
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "UpdateOrderDeliveryRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to System.Decimal. Path: $.weight | LineNumber: 3 | BytePositionInLine: 22.
+ ---> System.FormatException: The JSON value is either too large or too small for a Decimal.
+   at System.Text.Json.ThrowHelper.ThrowFormatException(NumericType numericType)
+   at System.Text.Json.Utf8JsonReader.GetDecimalWithQuotes()
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 15:49:40 An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "UpdateOrderDeliveryRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to System.Decimal. Path: $.weight | LineNumber: 3 | BytePositionInLine: 22.
+ ---> System.FormatException: The JSON value is either too large or too small for a Decimal.
+   at System.Text.Json.ThrowHelper.ThrowFormatException(NumericType numericType)
+   at System.Text.Json.Utf8JsonReader.GetDecimalWithQuotes()
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP ERR] 15:50:08 HTTP PUT /orders/654BB314-39E2-4E37-837B-B5AFBD0165F2/delivery responded 500 in 5.6145 ms
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "UpdateOrderDeliveryRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to System.Decimal. Path: $.codAmount | LineNumber: 4 | BytePositionInLine: 25.
+ ---> System.FormatException: The JSON value is either too large or too small for a Decimal.
+   at System.Text.Json.ThrowHelper.ThrowFormatException(NumericType numericType)
+   at System.Text.Json.Utf8JsonReader.GetDecimalWithQuotes()
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 15:50:08 An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "UpdateOrderDeliveryRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to System.Decimal. Path: $.codAmount | LineNumber: 4 | BytePositionInLine: 25.
+ ---> System.FormatException: The JSON value is either too large or too small for a Decimal.
+   at System.Text.Json.ThrowHelper.ThrowFormatException(NumericType numericType)
+   at System.Text.Json.Utf8JsonReader.GetDecimalWithQuotes()
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP ERR] 15:50:23 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+System.InvalidOperationException: Document element is null for required non-nullable property 'ContactPhone'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method364(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+System.InvalidOperationException: Document element is null for required non-nullable property 'ContactPhone'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method364(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP ERR] 15:50:48 HTTP PUT /orders/654BB314-39E2-4E37-837B-B5AFBD0165F2/delivery responded 500 in 29522.3461 ms
+System.InvalidOperationException: Document element is null for required non-nullable property 'ContactPhone'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method364(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Orders.UpdateDelivery.UpdateOrderDeliveryCommandHandler.Handle(UpdateOrderDeliveryCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\UpdateDelivery\UpdateOrderDeliveryCommandHandler.cs:line 15
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 24
+   at ScaleUp.Core.Api.Features.Orders.EndpointBuilder.<>c.<<MapEndpoint>b__0_11>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\EndpointBuilder.cs:line 151
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 15:50:48 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Document element is null for required non-nullable property 'ContactPhone'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method364(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Orders.UpdateDelivery.UpdateOrderDeliveryCommandHandler.Handle(UpdateOrderDeliveryCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\UpdateDelivery\UpdateOrderDeliveryCommandHandler.cs:line 15
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 24
+   at ScaleUp.Core.Api.Features.Orders.EndpointBuilder.<>c.<<MapEndpoint>b__0_11>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Orders\EndpointBuilder.cs:line 151
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP ERR] 16:31:31 HTTP PUT /orders/<string>/delivery responded 500 in 19.6780 ms
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "UpdateOrderDeliveryRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to System.Nullable`1[System.Boolean]. Path: $.orderDelivery.is_insurance | LineNumber: 8 | BytePositionInLine: 31.
+ ---> System.InvalidOperationException: Cannot get the value of a token type 'String' as a boolean.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_ExpectedBoolean(JsonTokenType tokenType)
+   at System.Text.Json.Utf8JsonReader.GetBoolean()
+   at System.Text.Json.Serialization.Converters.NullableConverter`1.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 16:31:31 An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "UpdateOrderDeliveryRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to System.Nullable`1[System.Boolean]. Path: $.orderDelivery.is_insurance | LineNumber: 8 | BytePositionInLine: 31.
+ ---> System.InvalidOperationException: Cannot get the value of a token type 'String' as a boolean.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_ExpectedBoolean(JsonTokenType tokenType)
+   at System.Text.Json.Utf8JsonReader.GetBoolean()
+   at System.Text.Json.Serialization.Converters.NullableConverter`1.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP ERR] 16:31:59 HTTP PUT /orders/654BB314-39E2-4E37-837B-B5AFBD0165F2/delivery responded 500 in 5.4728 ms
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "UpdateOrderDeliveryRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to System.Nullable`1[System.Boolean]. Path: $.orderDelivery.is_insurance | LineNumber: 8 | BytePositionInLine: 31.
+ ---> System.InvalidOperationException: Cannot get the value of a token type 'String' as a boolean.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_ExpectedBoolean(JsonTokenType tokenType)
+   at System.Text.Json.Utf8JsonReader.GetBoolean()
+   at System.Text.Json.Serialization.Converters.NullableConverter`1.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 16:31:59 An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "UpdateOrderDeliveryRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to System.Nullable`1[System.Boolean]. Path: $.orderDelivery.is_insurance | LineNumber: 8 | BytePositionInLine: 31.
+ ---> System.InvalidOperationException: Cannot get the value of a token type 'String' as a boolean.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_ExpectedBoolean(JsonTokenType tokenType)
+   at System.Text.Json.Utf8JsonReader.GetBoolean()
+   at System.Text.Json.Serialization.Converters.NullableConverter`1.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP INF] 16:52:28 HTTP PUT /orders/C07DA99C-B570-446F-BFD8-4BA9A7C1A4B6/delivery responded 422 in 58911.0172 ms
+[SCALEUP INF] 16:54:30 HTTP PUT /orders/1F7B2CD6-2325-45F8-A802-A1BBA888C025/delivery responded 422 in 78543.4613 ms
+[SCALEUP INF] 17:26:05 HTTP PUT /orders/1F7B2CD6-2325-45F8-A802-A1BBA888C025/delivery responded 422 in 126773.8090 ms
+[SCALEUP DBG] 17:27:24 Published domain event OrderDeliveryUpdatedEvent. EventData - {}
+[SCALEUP INF] 17:27:24 HTTP PUT /orders/1F7B2CD6-2325-45F8-A802-A1BBA888C025/delivery responded 200 in 70192.7506 ms

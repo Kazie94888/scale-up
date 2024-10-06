@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>9fe27405-134e-4d26-ab5c-50eaf1b13100</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ScaleUp.Core.Application\ScaleUp.Core.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bogus" Version="35.5.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
+    <PackageReference Include="Mapster" Version="7.4.1-pre01" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
+    <PackageReference Include="NSwag.AspNetCore" Version="14.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Base\Configurations\global-configuration.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Remove="Base\Constants\**" />
+    <Content Remove="logs\**" />
+    <Content Update="Base\Configurations\feature-permissions.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Base\Constants\**" />
+    <Compile Remove="logs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Base\Constants\**" />
+    <EmbeddedResource Remove="logs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Base\Constants\**" />
+    <None Remove="logs\**" />
+  </ItemGroup>
+
+</Project>

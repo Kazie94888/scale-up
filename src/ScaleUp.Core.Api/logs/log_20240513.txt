@@ -1,0 +1,11 @@
+[SCALEUP INF] 09:13:11 HTTP GET /favicon.ico responded 404 in 0.5044 ms
+[SCALEUP INF] 10:35:21 HTTP GET /favicon.ico responded 404 in 0.7731 ms
+[SCALEUP INF] 10:35:34 HTTP POST /orders/FA104FFF-ED71-FF4B-AD2C-8D6F9439F421/pick responded 422 in 6432.9323 ms
+[SCALEUP INF] 10:36:05 HTTP POST /orders/FA104FFF-ED71-FF4B-AD2C-8D6F9439F421/pick responded 422 in 13809.6294 ms
+[SCALEUP DBG] 10:40:01 Published domain event OrderPickedEvent. EventData - {}
+[SCALEUP INF] 10:40:03 HTTP POST /orders/FA104FFF-ED71-FF4B-AD2C-8D6F9439F421/pick responded 200 in 12727.8767 ms
+[SCALEUP INF] 10:57:13 HTTP POST /orders/FA104FFF-ED71-FF4B-AD2C-8D6F9439F421/pack responded 422 in 2485.2523 ms
+[SCALEUP DBG] 10:58:11 Published domain event OrderPackedEvent. EventData - {}
+[SCALEUP INF] 10:58:12 HTTP POST /orders/FA104FFF-ED71-FF4B-AD2C-8D6F9439F421/pack responded 200 in 7827.6184 ms
+[SCALEUP DBG] 10:59:28 Published domain event OrderPackedEvent. EventData - {}
+[SCALEUP INF] 10:59:28 HTTP POST /orders/FA104FFF-ED71-FF4B-AD2C-8D6F9439F421/pack responded 200 in 13847.3399 ms

@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+  scaleup.core.api:
+    image: ${DOCKER_REGISTRY-}scaleup-api
+    container_name: scaleup-api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=50000
+    build:
+      context: .
+      dockerfile: ScaleUp.Core.Api/Dockerfile
+    ports:
+      - "50000:50000"
+
+  scaleup.core.backgroundjobs:
+    image: ${DOCKER_REGISTRY-}scaleup-backgroundjobs
+    container_name: scaleup-backgroundjobs
+    environment:
+      - ASPNETCORE_HTTP_PORTS=50005
+      - ASPNETCORE_ENVIRONMENT=Development
+    build:
+      context: .
+      dockerfile: ScaleUp.Core.BackgroundJobs/Dockerfile
+    ports:
+      - "50005:50005"

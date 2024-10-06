@@ -1,0 +1,13 @@
+D:\Workspace\scaleup-core\src\ScaleUp.Core.SharedKernel\bin\Debug\net8.0\ScaleUp.Core.SharedKernel.deps.json
+D:\Workspace\scaleup-core\src\ScaleUp.Core.SharedKernel\bin\Debug\net8.0\ScaleUp.Core.SharedKernel.dll
+D:\Workspace\scaleup-core\src\ScaleUp.Core.SharedKernel\bin\Debug\net8.0\ScaleUp.Core.SharedKernel.pdb
+D:\Workspace\scaleup-core\src\ScaleUp.Core.SharedKernel\obj\Debug\net8.0\ScaleUp.Core.SharedKernel.csproj.AssemblyReference.cache
+D:\Workspace\scaleup-core\src\ScaleUp.Core.SharedKernel\obj\Debug\net8.0\ScaleUp.Core.SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\scaleup-core\src\ScaleUp.Core.SharedKernel\obj\Debug\net8.0\ScaleUp.Core.SharedKernel.AssemblyInfoInputs.cache
+D:\Workspace\scaleup-core\src\ScaleUp.Core.SharedKernel\obj\Debug\net8.0\ScaleUp.Core.SharedKernel.AssemblyInfo.cs
+D:\Workspace\scaleup-core\src\ScaleUp.Core.SharedKernel\obj\Debug\net8.0\ScaleUp.Core.SharedKernel.csproj.CoreCompileInputs.cache
+D:\Workspace\scaleup-core\src\ScaleUp.Core.SharedKernel\obj\Debug\net8.0\ScaleUp.Core.SharedKernel.sourcelink.json
+D:\Workspace\scaleup-core\src\ScaleUp.Core.SharedKernel\obj\Debug\net8.0\ScaleUp.Core.SharedKernel.dll
+D:\Workspace\scaleup-core\src\ScaleUp.Core.SharedKernel\obj\Debug\net8.0\refint\ScaleUp.Core.SharedKernel.dll
+D:\Workspace\scaleup-core\src\ScaleUp.Core.SharedKernel\obj\Debug\net8.0\ScaleUp.Core.SharedKernel.pdb
+D:\Workspace\scaleup-core\src\ScaleUp.Core.SharedKernel\obj\Debug\net8.0\ref\ScaleUp.Core.SharedKernel.dll

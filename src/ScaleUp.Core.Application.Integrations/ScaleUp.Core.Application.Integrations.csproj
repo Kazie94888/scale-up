@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Haravan\Features\Orders\Sync\**" />
+      <EmbeddedResource Remove="Haravan\Features\Orders\Sync\**" />
+      <None Remove="Haravan\Features\Orders\Sync\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ScaleUp.Core.Persistence\ScaleUp.Core.Persistence.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Mapster" Version="7.4.0" />
+      <PackageReference Include="morelinq" Version="4.2.0" />
+      <PackageReference Include="Refit" Version="7.0.0" />
+      <PackageReference Include="Refit.HttpClientFactory" Version="7.0.0" />
+    </ItemGroup>
+
+</Project>

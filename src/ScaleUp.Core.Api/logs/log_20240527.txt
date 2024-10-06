@@ -1,0 +1,622 @@
+[SCALEUP INF] 08:40:48 HTTP GET /favicon.ico responded 404 in 0.6795 ms
+[SCALEUP ERR] 08:45:14 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.Finalizers.FirstFinalizer`1.Finalize(IAsyncCursor`1 cursor, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.Execute(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQueryProvider`1.Execute[TResult](ExecutableQuery`2 executableQuery, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQueryProvider`1.Execute[TResult](Expression expression)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.ExecuteScalar[T](MongoExecutableQuery executableQuery)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.Execute[T](MongoExecutableQuery executableQuery, Action& log)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.Finalizers.FirstFinalizer`1.Finalize(IAsyncCursor`1 cursor, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.Execute(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQueryProvider`1.Execute[TResult](ExecutableQuery`2 executableQuery, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQueryProvider`1.Execute[TResult](Expression expression)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.ExecuteScalar[T](MongoExecutableQuery executableQuery)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.Execute[T](MongoExecutableQuery executableQuery, Action& log)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP ERR] 08:45:21 Failed to publish domain event TenantUpdatedEvent. EventData - {}
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.Finalizers.FirstFinalizer`1.Finalize(IAsyncCursor`1 cursor, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.Execute(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQueryProvider`1.Execute[TResult](ExecutableQuery`2 executableQuery, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQueryProvider`1.Execute[TResult](Expression expression)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.ExecuteScalar[T](MongoExecutableQuery executableQuery)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.Execute[T](MongoExecutableQuery executableQuery, Action& log)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at ScaleUp.Core.Application.Tenants.TenantUpdatedEventHandler.Handle(TenantUpdatedEvent notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Tenants\TenantUpdatedEventHandler.cs:line 22
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+[SCALEUP ERR] 08:45:34 HTTP PUT /tenants/529a29e4-6ca6-4809-9f25-59cf2330341a responded 500 in 22262.0464 ms
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.Finalizers.FirstFinalizer`1.Finalize(IAsyncCursor`1 cursor, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.Execute(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQueryProvider`1.Execute[TResult](ExecutableQuery`2 executableQuery, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQueryProvider`1.Execute[TResult](Expression expression)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.ExecuteScalar[T](MongoExecutableQuery executableQuery)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.Execute[T](MongoExecutableQuery executableQuery, Action& log)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at ScaleUp.Core.Application.Tenants.TenantUpdatedEventHandler.Handle(TenantUpdatedEvent notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Tenants\TenantUpdatedEventHandler.cs:line 22
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.DispatchDomainEventsAsync(CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 86
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 76
+   at ScaleUp.Core.Api.Features.Tenants.Update.UpdateTenantCommandHandler.Handle(UpdateTenantCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\Update\UpdateTenantCommandHandler.cs:line 30
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 50
+   at ScaleUp.Core.Api.Features.Tenants.EndpointBuilder.<>c.<<MapEndpoint>b__0_3>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\EndpointBuilder.cs:line 55
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 08:45:34 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.Finalizers.FirstFinalizer`1.Finalize(IAsyncCursor`1 cursor, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.Execute(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQueryProvider`1.Execute[TResult](ExecutableQuery`2 executableQuery, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQueryProvider`1.Execute[TResult](Expression expression)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.ExecuteScalar[T](MongoExecutableQuery executableQuery)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.Execute[T](MongoExecutableQuery executableQuery, Action& log)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at ScaleUp.Core.Application.Tenants.TenantUpdatedEventHandler.Handle(TenantUpdatedEvent notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Tenants\TenantUpdatedEventHandler.cs:line 22
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.DispatchDomainEventsAsync(CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 86
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 76
+   at ScaleUp.Core.Api.Features.Tenants.Update.UpdateTenantCommandHandler.Handle(UpdateTenantCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\Update\UpdateTenantCommandHandler.cs:line 30
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 50
+   at ScaleUp.Core.Api.Features.Tenants.EndpointBuilder.<>c.<<MapEndpoint>b__0_3>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\EndpointBuilder.cs:line 55
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP INF] 08:47:37 HTTP PUT /tenants/13B98C34-358A-409F-B937-EBF9EF591AED responded 422 in 63843.0539 ms
+[SCALEUP INF] 09:11:44 HTTP GET /roles/0A3D3DD8-3E0B-44C0-BB43-1944618ABD4B responded 200 in 2018.9295 ms
+[SCALEUP INF] 09:24:46 HTTP GET /roles/0A3D3DD8-3E0B-44C0-BB43-1944618ABD4B responded 200 in 1785.4487 ms
+[SCALEUP ERR] 09:24:50 HTTP PUT /roles/<string> responded 500 in 21.9475 ms
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "UpdateRoleRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to System.Guid. Path: $.tenant_id | LineNumber: 2 | BytePositionInLine: 25.
+ ---> System.FormatException: The JSON value is not in a supported Guid format.
+   at System.Text.Json.ThrowHelper.ThrowFormatException(DataType dataType)
+   at System.Text.Json.Utf8JsonReader.GetGuid()
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 09:24:50 An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "UpdateRoleRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON value could not be converted to System.Guid. Path: $.tenant_id | LineNumber: 2 | BytePositionInLine: 25.
+ ---> System.FormatException: The JSON value is not in a supported Guid format.
+   at System.Text.Json.ThrowHelper.ThrowFormatException(DataType dataType)
+   at System.Text.Json.Utf8JsonReader.GetGuid()
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP ERR] 09:26:36 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+System.InvalidOperationException: Document element is missing for required non-nullable property 'RoleIds'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method451(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+System.InvalidOperationException: Document element is missing for required non-nullable property 'RoleIds'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method451(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP ERR] 09:28:09 HTTP PUT /roles/0A3D3DD8-3E0B-44C0-BB43-1944618ABD4B responded 500 in 94035.9590 ms
+System.InvalidOperationException: Document element is missing for required non-nullable property 'RoleIds'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method451(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Roles.Update.UpdateRoleCommandHandler.Handle(UpdateRoleCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\Update\UpdateRoleCommandHandler.cs:line 29
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 50
+   at ScaleUp.Core.Api.Features.Roles.EndpointBuilder.<>c.<<MapEndpoint>b__0_3>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\EndpointBuilder.cs:line 52
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 09:28:09 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Document element is missing for required non-nullable property 'RoleIds'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method451(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Roles.Update.UpdateRoleCommandHandler.Handle(UpdateRoleCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\Update\UpdateRoleCommandHandler.cs:line 29
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 50
+   at ScaleUp.Core.Api.Features.Roles.EndpointBuilder.<>c.<<MapEndpoint>b__0_3>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\EndpointBuilder.cs:line 52
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP ERR] 09:28:50 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+System.InvalidOperationException: Document element is missing for required non-nullable property 'RoleIds'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method451(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+System.InvalidOperationException: Document element is missing for required non-nullable property 'RoleIds'.
+   at MongoDB.EntityFrameworkCore.Serializers.SerializationHelper.GetPropertyValue[T](BsonDocument document, IReadOnlyProperty property)
+   at lambda_method451(Closure, QueryContext, BsonDocument)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP ERR] 09:32:12 Failed to publish domain event RoleCreatedEvent. EventData - {}
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ScaleUp.Core.Domain.Events.Roles.RoleCreatedEvent.GetDescription() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\Events\Roles\RoleCreatedEvent.cs:line 16
+   at ScaleUp.Core.Application.Audits.AuditEventHandler.Handle(AuditEventBase notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Audits\AuditEventHandler.cs:line 14
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+[SCALEUP ERR] 09:32:12 Failed to publish domain event TenantCreatedEvent. EventData - {}
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ScaleUp.Core.Domain.Events.Roles.RoleCreatedEvent.GetDescription() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\Events\Roles\RoleCreatedEvent.cs:line 16
+   at ScaleUp.Core.Application.Audits.AuditEventHandler.Handle(AuditEventBase notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Audits\AuditEventHandler.cs:line 14
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.DispatchDomainEventsAsync(CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 86
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 76
+   at ScaleUp.Core.Application.Tenants.TenantCreatedEventHandler.Handle(TenantCreatedEvent notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Tenants\TenantCreatedEventHandler.cs:line 45
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+[SCALEUP ERR] 09:32:13 HTTP POST /tenants responded 500 in 3282.9475 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ScaleUp.Core.Domain.Events.Roles.RoleCreatedEvent.GetDescription() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\Events\Roles\RoleCreatedEvent.cs:line 16
+   at ScaleUp.Core.Application.Audits.AuditEventHandler.Handle(AuditEventBase notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Audits\AuditEventHandler.cs:line 14
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.DispatchDomainEventsAsync(CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 86
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 76
+   at ScaleUp.Core.Application.Tenants.TenantCreatedEventHandler.Handle(TenantCreatedEvent notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Tenants\TenantCreatedEventHandler.cs:line 45
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.DispatchDomainEventsAsync(CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 86
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 76
+   at ScaleUp.Core.Api.Features.Tenants.Create.CreateTenantCommandHandler.Handle(CreateTenantCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\Create\CreateTenantCommandHandler.cs:line 31
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 50
+   at ScaleUp.Core.Api.Features.Tenants.EndpointBuilder.<>c.<<MapEndpoint>b__0_1>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\EndpointBuilder.cs:line 33
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 09:32:13 An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ScaleUp.Core.Domain.Events.Roles.RoleCreatedEvent.GetDescription() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\Events\Roles\RoleCreatedEvent.cs:line 16
+   at ScaleUp.Core.Application.Audits.AuditEventHandler.Handle(AuditEventBase notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Audits\AuditEventHandler.cs:line 14
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.DispatchDomainEventsAsync(CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 86
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 76
+   at ScaleUp.Core.Application.Tenants.TenantCreatedEventHandler.Handle(TenantCreatedEvent notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Tenants\TenantCreatedEventHandler.cs:line 45
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.DispatchDomainEventsAsync(CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 86
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 76
+   at ScaleUp.Core.Api.Features.Tenants.Create.CreateTenantCommandHandler.Handle(CreateTenantCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\Create\CreateTenantCommandHandler.cs:line 31
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 50
+   at ScaleUp.Core.Api.Features.Tenants.EndpointBuilder.<>c.<<MapEndpoint>b__0_1>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\EndpointBuilder.cs:line 33
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP INF] 09:33:22 HTTP POST /tenants responded 422 in 188.1191 ms
+[SCALEUP ERR] 09:34:59 Failed to publish domain event RoleCreatedEvent. EventData - {}
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ScaleUp.Core.Domain.Events.Roles.RoleCreatedEvent.GetDescription() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\Events\Roles\RoleCreatedEvent.cs:line 16
+   at ScaleUp.Core.Application.Audits.AuditEventHandler.Handle(AuditEventBase notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Audits\AuditEventHandler.cs:line 14
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+[SCALEUP ERR] 09:35:00 Failed to publish domain event TenantCreatedEvent. EventData - {}
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ScaleUp.Core.Domain.Events.Roles.RoleCreatedEvent.GetDescription() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\Events\Roles\RoleCreatedEvent.cs:line 16
+   at ScaleUp.Core.Application.Audits.AuditEventHandler.Handle(AuditEventBase notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Audits\AuditEventHandler.cs:line 14
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.DispatchDomainEventsAsync(CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 86
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 76
+   at ScaleUp.Core.Application.Tenants.TenantCreatedEventHandler.Handle(TenantCreatedEvent notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Tenants\TenantCreatedEventHandler.cs:line 45
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+[SCALEUP ERR] 09:35:00 HTTP POST /tenants responded 500 in 15518.2250 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ScaleUp.Core.Domain.Events.Roles.RoleCreatedEvent.GetDescription() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\Events\Roles\RoleCreatedEvent.cs:line 16
+   at ScaleUp.Core.Application.Audits.AuditEventHandler.Handle(AuditEventBase notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Audits\AuditEventHandler.cs:line 14
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.DispatchDomainEventsAsync(CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 86
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 76
+   at ScaleUp.Core.Application.Tenants.TenantCreatedEventHandler.Handle(TenantCreatedEvent notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Tenants\TenantCreatedEventHandler.cs:line 45
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.DispatchDomainEventsAsync(CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 86
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 76
+   at ScaleUp.Core.Api.Features.Tenants.Create.CreateTenantCommandHandler.Handle(CreateTenantCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\Create\CreateTenantCommandHandler.cs:line 31
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 50
+   at ScaleUp.Core.Api.Features.Tenants.EndpointBuilder.<>c.<<MapEndpoint>b__0_1>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\EndpointBuilder.cs:line 33
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 09:35:00 An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ScaleUp.Core.Domain.Events.Roles.RoleCreatedEvent.GetDescription() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\Events\Roles\RoleCreatedEvent.cs:line 16
+   at ScaleUp.Core.Application.Audits.AuditEventHandler.Handle(AuditEventBase notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Audits\AuditEventHandler.cs:line 14
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.DispatchDomainEventsAsync(CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 86
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 76
+   at ScaleUp.Core.Application.Tenants.TenantCreatedEventHandler.Handle(TenantCreatedEvent notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Tenants\TenantCreatedEventHandler.cs:line 45
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.DispatchDomainEventsAsync(CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 86
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 76
+   at ScaleUp.Core.Api.Features.Tenants.Create.CreateTenantCommandHandler.Handle(CreateTenantCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\Create\CreateTenantCommandHandler.cs:line 31
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 50
+   at ScaleUp.Core.Api.Features.Tenants.EndpointBuilder.<>c.<<MapEndpoint>b__0_1>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\EndpointBuilder.cs:line 33
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP INF] 09:36:40 HTTP POST /tenants responded 422 in 1155.6163 ms
+[SCALEUP DBG] 09:37:07 Published domain event RoleCreatedEvent. EventData - {}
+[SCALEUP DBG] 09:37:07 Published domain event TenantCreatedEvent. EventData - {}
+[SCALEUP INF] 09:37:07 HTTP POST /tenants responded 200 in 7403.7304 ms
+[SCALEUP DBG] 09:37:16 Published domain event RoleCreatedEvent. EventData - {}
+[SCALEUP DBG] 09:37:16 Published domain event UserCreatedEvent. EventData - {}
+[SCALEUP DBG] 09:37:16 Published domain event TenantCreatedEvent. EventData - {}
+[SCALEUP INF] 09:37:16 HTTP POST /tenants responded 200 in 25.8238 ms
+[SCALEUP DBG] 09:37:23 Published domain event RoleCreatedEvent. EventData - {}
+[SCALEUP DBG] 09:37:23 Published domain event UserCreatedEvent. EventData - {}
+[SCALEUP DBG] 09:37:23 Published domain event TenantCreatedEvent. EventData - {}
+[SCALEUP INF] 09:37:23 HTTP POST /tenants responded 200 in 20.5745 ms
+[SCALEUP DBG] 09:37:27 Published domain event RoleCreatedEvent. EventData - {}
+[SCALEUP DBG] 09:37:27 Published domain event TenantCreatedEvent. EventData - {}
+[SCALEUP INF] 09:37:27 HTTP POST /tenants responded 200 in 25.3501 ms
+[SCALEUP INF] 09:37:38 HTTP GET /tenants responded 200 in 80.1763 ms
+[SCALEUP INF] 09:38:01 HTTP GET /tenants/9EEC5E8D-57CB-4CE1-8725-D01CE36CBCF5 responded 200 in 40.8594 ms
+[SCALEUP INF] 09:38:09 HTTP GET /tenants/8B7B6EDF-9DD0-4174-B18E-899D1C9DD027 responded 200 in 7.5643 ms
+[SCALEUP DBG] 09:38:34 Published domain event TenantUpdatedEvent. EventData - {}
+[SCALEUP INF] 09:38:34 HTTP PUT /tenants/8B7B6EDF-9DD0-4174-B18E-899D1C9DD027 responded 200 in 85.9630 ms
+[SCALEUP DBG] 09:39:47 Published domain event RoleCreatedEvent. EventData - {}
+[SCALEUP INF] 09:39:47 HTTP POST /roles responded 200 in 53.9028 ms
+[SCALEUP INF] 09:39:58 HTTP GET /roles responded 200 in 44.2819 ms
+[SCALEUP DBG] 09:40:46 Published domain event RoleUpdatedEvent. EventData - {}
+[SCALEUP INF] 09:40:46 HTTP PUT /roles/331c22a6-ce27-4da9-8499-353dc28e8c4f responded 200 in 7303.4936 ms
+[SCALEUP ERR] 09:40:56 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.Finalizers.FirstFinalizer`1.Finalize(IAsyncCursor`1 cursor, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.Execute(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQueryProvider`1.Execute[TResult](ExecutableQuery`2 executableQuery, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQueryProvider`1.Execute[TResult](Expression expression)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.ExecuteScalar[T](MongoExecutableQuery executableQuery)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.Execute[T](MongoExecutableQuery executableQuery, Action& log)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.Finalizers.FirstFinalizer`1.Finalize(IAsyncCursor`1 cursor, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.Execute(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQueryProvider`1.Execute[TResult](ExecutableQuery`2 executableQuery, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQueryProvider`1.Execute[TResult](Expression expression)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.ExecuteScalar[T](MongoExecutableQuery executableQuery)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.Execute[T](MongoExecutableQuery executableQuery, Action& log)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP ERR] 09:40:58 HTTP GET /roles/0A3D3DD8-3E0B-44C0-BB43-1944618ABD4B responded 500 in 2137.4395 ms
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.Finalizers.FirstFinalizer`1.Finalize(IAsyncCursor`1 cursor, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.Execute(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQueryProvider`1.Execute[TResult](ExecutableQuery`2 executableQuery, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQueryProvider`1.Execute[TResult](Expression expression)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.ExecuteScalar[T](MongoExecutableQuery executableQuery)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.Execute[T](MongoExecutableQuery executableQuery, Action& log)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Roles.Get.GetRoleQueryHandler.Handle(GetRoleQuery request, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\Get\GetRoleQueryHandler.cs:line 12
+   at ScaleUp.Core.Api.Features.Roles.EndpointBuilder.<>c.<<MapEndpoint>b__0_2>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\EndpointBuilder.cs:line 42
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 09:40:58 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.Finalizers.FirstFinalizer`1.Finalize(IAsyncCursor`1 cursor, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.Execute(IClientSessionHandle session, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQueryProvider`1.Execute[TResult](ExecutableQuery`2 executableQuery, CancellationToken cancellationToken)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQueryProvider`1.Execute[TResult](Expression expression)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.ExecuteScalar[T](MongoExecutableQuery executableQuery)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.Execute[T](MongoExecutableQuery executableQuery, Action& log)
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Roles.Get.GetRoleQueryHandler.Handle(GetRoleQuery request, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\Get\GetRoleQueryHandler.cs:line 12
+   at ScaleUp.Core.Api.Features.Roles.EndpointBuilder.<>c.<<MapEndpoint>b__0_2>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\EndpointBuilder.cs:line 42
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP INF] 09:41:09 HTTP GET /roles/1B05E5DD-EA24-4A42-AE0B-2E3157A119A5 responded 200 in 5.3558 ms
+[SCALEUP WRN] 10:54:32 The same entity is being tracked as different entity types 'Role.CreatedBy#UserInfo' and 'Tenant.CreatedBy#UserInfo' with defining navigations. If a property value changes, it will result in two store changes, which might not be the desired outcome.
+[SCALEUP WRN] 10:54:32 The same entity is being tracked as different entity types 'Role.CreatedBy#UserInfo' and 'Tenant.CreatedBy#UserInfo' with defining navigations. If a property value changes, it will result in two store changes, which might not be the desired outcome.
+[SCALEUP WRN] 10:54:32 The same entity is being tracked as different entity types 'Role.CreatedBy#UserInfo' and 'Tenant.CreatedBy#UserInfo' with defining navigations. If a property value changes, it will result in two store changes, which might not be the desired outcome.
+[SCALEUP DBG] 10:54:32 Published domain event RoleCreatedEvent. EventData - {}
+[SCALEUP DBG] 10:54:32 Published domain event TenantCreatedEvent. EventData - {}
+[SCALEUP INF] 10:54:32 HTTP POST /tenants responded 200 in 1834.6450 ms
+[SCALEUP INF] 10:54:38 HTTP GET /tenants responded 200 in 91.2319 ms
+[SCALEUP INF] 10:54:42 HTTP GET /tenants/8B7B6EDF-9DD0-4174-B18E-899D1C9DD027 responded 200 in 39.9727 ms
+[SCALEUP DBG] 10:54:45 Published domain event TenantUpdatedEvent. EventData - {}
+[SCALEUP INF] 10:54:45 HTTP PUT /tenants/8B7B6EDF-9DD0-4174-B18E-899D1C9DD027 responded 200 in 77.4216 ms
+[SCALEUP ERR] 10:55:00 HTTP POST /roles responded 500 in 9.3723 ms
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "CreateRoleRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: JSON deserialization for type 'ScaleUp.Core.Api.Features.Roles.Create.CreateRoleRequest' was missing required properties, including the following: user_ids
+   at System.Text.Json.ThrowHelper.ThrowJsonException_JsonRequiredPropertyMissing(JsonTypeInfo parent, BitArray requiredPropertiesSet)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 10:55:00 An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "CreateRoleRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: JSON deserialization for type 'ScaleUp.Core.Api.Features.Roles.Create.CreateRoleRequest' was missing required properties, including the following: user_ids
+   at System.Text.Json.ThrowHelper.ThrowJsonException_JsonRequiredPropertyMissing(JsonTypeInfo parent, BitArray requiredPropertiesSet)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP ERR] 10:55:14 HTTP POST /roles responded 500 in 1.5798 ms
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "CreateRoleRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: JSON deserialization for type 'ScaleUp.Core.Api.Features.Roles.Create.CreateRoleRequest' was missing required properties, including the following: user_ids
+   at System.Text.Json.ThrowHelper.ThrowJsonException_JsonRequiredPropertyMissing(JsonTypeInfo parent, BitArray requiredPropertiesSet)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 10:55:14 An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "CreateRoleRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: JSON deserialization for type 'ScaleUp.Core.Api.Features.Roles.Create.CreateRoleRequest' was missing required properties, including the following: user_ids
+   at System.Text.Json.ThrowHelper.ThrowJsonException_JsonRequiredPropertyMissing(JsonTypeInfo parent, BitArray requiredPropertiesSet)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP DBG] 10:55:22 Published domain event RoleCreatedEvent. EventData - {}
+[SCALEUP INF] 10:55:22 HTTP POST /roles responded 200 in 42.9906 ms
+[SCALEUP INF] 10:55:28 HTTP GET /roles responded 200 in 41.4686 ms
+[SCALEUP DBG] 10:55:33 Published domain event RoleUpdatedEvent. EventData - {}
+[SCALEUP INF] 10:55:33 HTTP PUT /roles/331c22a6-ce27-4da9-8499-353dc28e8c4f responded 200 in 41.7960 ms
+[SCALEUP INF] 10:55:36 HTTP GET /roles/1B05E5DD-EA24-4A42-AE0B-2E3157A119A5 responded 200 in 11.1623 ms
+[SCALEUP DBG] 11:55:58 Published domain event RoleUpdatedEvent. EventData - {}
+[SCALEUP INF] 11:55:58 HTTP PUT /roles/331c22a6-ce27-4da9-8499-353dc28e8c4f responded 200 in 26179.0758 ms
+[SCALEUP DBG] 11:57:08 Published domain event RoleUpdatedEvent. EventData - {}
+[SCALEUP INF] 11:57:08 HTTP PUT /roles/331c22a6-ce27-4da9-8499-353dc28e8c4f responded 200 in 66578.9444 ms
+[SCALEUP ERR] 13:36:42 HTTP PUT /roles/331c22a6-ce27-4da9-8499-353dc28e8c4f responded 500 in 32747.3767 ms
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at ScaleUp.Core.Api.Features.Roles.Update.UpdateRoleCommandHandler.Handle(UpdateRoleCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\Update\UpdateRoleCommandHandler.cs:line 20
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 50
+   at ScaleUp.Core.Api.Features.Roles.EndpointBuilder.<>c.<<MapEndpoint>b__0_3>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\EndpointBuilder.cs:line 52
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 13:36:42 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Sequence contains no matching element
+   at System.Linq.ThrowHelper.ThrowNoMatchException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at ScaleUp.Core.Api.Features.Roles.Update.UpdateRoleCommandHandler.Handle(UpdateRoleCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\Update\UpdateRoleCommandHandler.cs:line 20
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 50
+   at ScaleUp.Core.Api.Features.Roles.EndpointBuilder.<>c.<<MapEndpoint>b__0_3>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\EndpointBuilder.cs:line 52
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP DBG] 13:39:24 Published domain event RoleUpdatedEvent. EventData - {}
+[SCALEUP INF] 13:39:24 HTTP PUT /roles/331c22a6-ce27-4da9-8499-353dc28e8c4f responded 200 in 27675.6599 ms
+[SCALEUP DBG] 13:40:27 Published domain event RoleUpdatedEvent. EventData - {}
+[SCALEUP INF] 13:40:27 HTTP PUT /roles/331c22a6-ce27-4da9-8499-353dc28e8c4f responded 200 in 5510.9282 ms
+[SCALEUP DBG] 13:41:13 Published domain event RoleUpdatedEvent. EventData - {}
+[SCALEUP INF] 13:41:13 HTTP PUT /roles/331c22a6-ce27-4da9-8499-353dc28e8c4f responded 200 in 14788.2509 ms
+[SCALEUP INF] 13:55:28 HTTP GET /roles responded 200 in 1399.3237 ms
+[SCALEUP INF] 13:56:08 HTTP GET /roles responded 200 in 1356.9728 ms
+[SCALEUP INF] 13:56:24 HTTP GET /roles responded 200 in 17.0105 ms
+[SCALEUP INF] 13:57:06 HTTP GET /roles responded 200 in 15.0126 ms
+[SCALEUP WRN] 07:57:09 Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+[SCALEUP WRN] 07:57:09 No XML encryptor configured. Key {97954f2e-6fd2-4282-a84f-4690a0c7df00} may be persisted to storage in unencrypted form.
+[SCALEUP INF] 08:00:18 HTTP GET /favicon.ico responded 404 in 0.8859 ms
+[SCALEUP INF] 08:01:40 HTTP GET /users responded 200 in 2011.5519 ms
+[SCALEUP INF] 08:07:35 HTTP GET /users responded 200 in 333853.4501 ms
+[SCALEUP WRN] 09:29:41 Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+[SCALEUP WRN] 09:29:41 No XML encryptor configured. Key {2115ede0-6b4c-4715-892c-c3bcc0f13292} may be persisted to storage in unencrypted form.
+[SCALEUP ERR] 09:43:12 HTTP GET /tenants responded 500 in 12.3976 ms
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to bind parameter "int Page" from "<integer>".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.ParameterBindingFailed(HttpContext httpContext, String parameterTypeName, String parameterName, String sourceValue, Boolean shouldThrow)
+   at lambda_method45(Closure, Object, HttpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 09:43:12 An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to bind parameter "int Page" from "<integer>".
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.ParameterBindingFailed(HttpContext httpContext, String parameterTypeName, String parameterName, String sourceValue, Boolean shouldThrow)
+   at lambda_method45(Closure, Object, HttpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP INF] 09:43:25 HTTP GET /tenants responded 200 in 2893.7853 ms
+[SCALEUP WRN] 09:54:58 Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+[SCALEUP WRN] 09:54:58 No XML encryptor configured. Key {4fcccf12-a868-42c3-aa51-3534b65078fa} may be persisted to storage in unencrypted form.
+[SCALEUP INF] 09:55:54 HTTP GET /tenants responded 200 in 2642.6962 ms
+[SCALEUP INF] 20:03:42 HTTP GET /favicon.ico responded 404 in 2.3138 ms

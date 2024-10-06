@@ -1,0 +1,901 @@
+[SCALEUP INF] 09:09:59 HTTP GET /favicon.ico responded 404 in 0.5731 ms
+[SCALEUP ERR] 09:12:31 Failed to publish domain event TenantCreatedEvent. EventData - {}
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ScaleUp.Core.Domain.Entities.Users.User.AddRole(UserRole userRole) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\Entities\Users\User.cs:line 47
+   at ScaleUp.Core.Application.Tenants.TenantCreatedEventHandler.Handle(TenantCreatedEvent notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Tenants\TenantCreatedEventHandler.cs:line 37
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+[SCALEUP ERR] 09:12:32 HTTP POST /tenants responded 500 in 2115.8855 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ScaleUp.Core.Domain.Entities.Users.User.AddRole(UserRole userRole) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\Entities\Users\User.cs:line 47
+   at ScaleUp.Core.Application.Tenants.TenantCreatedEventHandler.Handle(TenantCreatedEvent notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Tenants\TenantCreatedEventHandler.cs:line 37
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.DispatchDomainEventsAsync(CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 86
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 76
+   at ScaleUp.Core.Api.Features.Tenants.Create.CreateTenantCommandHandler.Handle(CreateTenantCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\Create\CreateTenantCommandHandler.cs:line 31
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 50
+   at ScaleUp.Core.Api.Features.Tenants.EndpointBuilder.<>c.<<MapEndpoint>b__0_1>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\EndpointBuilder.cs:line 33
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 09:12:32 An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ScaleUp.Core.Domain.Entities.Users.User.AddRole(UserRole userRole) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\Entities\Users\User.cs:line 47
+   at ScaleUp.Core.Application.Tenants.TenantCreatedEventHandler.Handle(TenantCreatedEvent notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Tenants\TenantCreatedEventHandler.cs:line 37
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.DispatchDomainEventsAsync(CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 86
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 76
+   at ScaleUp.Core.Api.Features.Tenants.Create.CreateTenantCommandHandler.Handle(CreateTenantCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\Create\CreateTenantCommandHandler.cs:line 31
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 50
+   at ScaleUp.Core.Api.Features.Tenants.EndpointBuilder.<>c.<<MapEndpoint>b__0_1>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\EndpointBuilder.cs:line 33
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP DBG] 09:17:46 Published domain event UserCreatedEvent. EventData - {}
+[SCALEUP DBG] 09:17:46 Published domain event TenantCreatedEvent. EventData - {}
+[SCALEUP INF] 09:17:46 HTTP POST /tenants responded 200 in 23864.6012 ms
+[SCALEUP ERR] 09:20:42 An exception occurred in the database while saving changes for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: ScaleUpMaster.Users index: _id_ dup key: { _id: BinData(3, D3B564C95FE0744581CC25578F3FE9BE) }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.SaveUpdatesAsync(IEnumerable`1 updates, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoDatabaseWrapper.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: ScaleUpMaster.Users index: _id_ dup key: { _id: BinData(3, D3B564C95FE0744581CC25578F3FE9BE) }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.SaveUpdatesAsync(IEnumerable`1 updates, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoDatabaseWrapper.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[SCALEUP ERR] 09:20:43 Failed to publish domain event TenantCreatedEvent. EventData - {}
+MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: ScaleUpMaster.Users index: _id_ dup key: { _id: BinData(3, D3B564C95FE0744581CC25578F3FE9BE) }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.SaveUpdatesAsync(IEnumerable`1 updates, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoDatabaseWrapper.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 75
+   at ScaleUp.Core.Application.Tenants.TenantCreatedEventHandler.Handle(TenantCreatedEvent notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Tenants\TenantCreatedEventHandler.cs:line 39
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+[SCALEUP ERR] 09:20:43 HTTP POST /tenants responded 500 in 21774.8568 ms
+MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: ScaleUpMaster.Users index: _id_ dup key: { _id: BinData(3, D3B564C95FE0744581CC25578F3FE9BE) }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.SaveUpdatesAsync(IEnumerable`1 updates, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoDatabaseWrapper.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 75
+   at ScaleUp.Core.Application.Tenants.TenantCreatedEventHandler.Handle(TenantCreatedEvent notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Tenants\TenantCreatedEventHandler.cs:line 39
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.DispatchDomainEventsAsync(CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 86
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 76
+   at ScaleUp.Core.Api.Features.Tenants.Create.CreateTenantCommandHandler.Handle(CreateTenantCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\Create\CreateTenantCommandHandler.cs:line 31
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 50
+   at ScaleUp.Core.Api.Features.Tenants.EndpointBuilder.<>c.<<MapEndpoint>b__0_1>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\EndpointBuilder.cs:line 33
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 09:20:43 An unhandled exception has occurred while executing the request.
+MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: ScaleUpMaster.Users index: _id_ dup key: { _id: BinData(3, D3B564C95FE0744581CC25578F3FE9BE) }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.SaveUpdatesAsync(IEnumerable`1 updates, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoDatabaseWrapper.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 75
+   at ScaleUp.Core.Application.Tenants.TenantCreatedEventHandler.Handle(TenantCreatedEvent notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Tenants\TenantCreatedEventHandler.cs:line 39
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.DispatchDomainEventsAsync(CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 86
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 76
+   at ScaleUp.Core.Api.Features.Tenants.Create.CreateTenantCommandHandler.Handle(CreateTenantCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\Create\CreateTenantCommandHandler.cs:line 31
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 50
+   at ScaleUp.Core.Api.Features.Tenants.EndpointBuilder.<>c.<<MapEndpoint>b__0_1>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\EndpointBuilder.cs:line 33
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP DBG] 09:30:35 Published domain event TenantCreatedEvent. EventData - {}
+[SCALEUP INF] 09:30:35 HTTP POST /tenants responded 200 in 20390.1056 ms
+[SCALEUP DBG] 09:38:06 Published domain event TenantCreatedEvent. EventData - {}
+[SCALEUP INF] 09:38:06 HTTP POST /tenants responded 200 in 3933.0764 ms
+[SCALEUP DBG] 09:40:54 Published domain event TenantCreatedEvent. EventData - {}
+[SCALEUP INF] 09:40:54 HTTP POST /tenants responded 200 in 1700.8798 ms
+[SCALEUP ERR] 09:48:51 Failed to publish domain event TenantCreatedEvent. EventData - {}
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ScaleUp.Core.Domain.Entities.Tenants.Tenant.AddHistory(TenantHistory history) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\Entities\Tenants\Tenant.cs:line 71
+   at ScaleUp.Core.Application.Tenants.TenantCreatedEventHandler.Handle(TenantCreatedEvent notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Tenants\TenantCreatedEventHandler.cs:line 49
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+[SCALEUP ERR] 09:48:51 HTTP POST /tenants responded 500 in 2131.5714 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ScaleUp.Core.Domain.Entities.Tenants.Tenant.AddHistory(TenantHistory history) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\Entities\Tenants\Tenant.cs:line 71
+   at ScaleUp.Core.Application.Tenants.TenantCreatedEventHandler.Handle(TenantCreatedEvent notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Tenants\TenantCreatedEventHandler.cs:line 49
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.DispatchDomainEventsAsync(CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 86
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 76
+   at ScaleUp.Core.Api.Features.Tenants.Create.CreateTenantCommandHandler.Handle(CreateTenantCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\Create\CreateTenantCommandHandler.cs:line 31
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 50
+   at ScaleUp.Core.Api.Features.Tenants.EndpointBuilder.<>c.<<MapEndpoint>b__0_1>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\EndpointBuilder.cs:line 33
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 09:48:51 An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ScaleUp.Core.Domain.Entities.Tenants.Tenant.AddHistory(TenantHistory history) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\Entities\Tenants\Tenant.cs:line 71
+   at ScaleUp.Core.Application.Tenants.TenantCreatedEventHandler.Handle(TenantCreatedEvent notification, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Application\Tenants\TenantCreatedEventHandler.cs:line 49
+   at MediatR.NotificationPublishers.ForeachAwaitPublisher.Publish(IEnumerable`1 handlerExecutors, INotification notification, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.DomainEvents.DomainEventsDispatcher.DispatchDomainEventsAsync[TContext](TContext context, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\DomainEvents\DomainEventsDispatcher.cs:line 35
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.DispatchDomainEventsAsync(CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 86
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 76
+   at ScaleUp.Core.Api.Features.Tenants.Create.CreateTenantCommandHandler.Handle(CreateTenantCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\Create\CreateTenantCommandHandler.cs:line 31
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 50
+   at ScaleUp.Core.Api.Features.Tenants.EndpointBuilder.<>c.<<MapEndpoint>b__0_1>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Tenants\EndpointBuilder.cs:line 33
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP INF] 09:49:55 HTTP POST /tenants responded 422 in 1338.0474 ms
+[SCALEUP DBG] 09:50:03 Published domain event TenantCreatedEvent. EventData - {}
+[SCALEUP INF] 09:50:03 HTTP POST /tenants responded 200 in 453.0008 ms
+[SCALEUP DBG] 09:50:29 Published domain event TenantCreatedEvent. EventData - {}
+[SCALEUP INF] 09:50:29 HTTP POST /tenants responded 200 in 26.0197 ms
+[SCALEUP DBG] 09:51:18 Published domain event UserCreatedEvent. EventData - {}
+[SCALEUP DBG] 09:51:18 Published domain event TenantCreatedEvent. EventData - {}
+[SCALEUP INF] 09:51:18 HTTP POST /tenants responded 200 in 51.0166 ms
+[SCALEUP DBG] 09:53:05 Published domain event TenantCreatedEvent. EventData - {}
+[SCALEUP INF] 09:53:06 HTTP POST /tenants responded 200 in 1622.1709 ms
+[SCALEUP DBG] 09:53:48 Published domain event TenantCreatedEvent. EventData - {}
+[SCALEUP INF] 09:53:48 HTTP POST /tenants responded 200 in 21130.7885 ms
+[SCALEUP DBG] 09:55:36 Published domain event UserCreatedEvent. EventData - {}
+[SCALEUP INF] 09:55:36 HTTP POST /users responded 200 in 1378.7171 ms
+[SCALEUP DBG] 09:57:10 Published domain event UserCreatedEvent. EventData - {}
+[SCALEUP INF] 09:57:10 HTTP POST /users responded 200 in 1587.7535 ms
+[SCALEUP DBG] 09:58:39 Published domain event UserCreatedEvent. EventData - {}
+[SCALEUP DBG] 09:58:39 Published domain event TenantCreatedEvent. EventData - {}
+[SCALEUP INF] 09:58:39 HTTP POST /tenants responded 200 in 237.0313 ms
+[SCALEUP DBG] 09:58:57 Published domain event TenantCreatedEvent. EventData - {}
+[SCALEUP INF] 09:58:57 HTTP POST /tenants responded 200 in 59.7634 ms
+[SCALEUP DBG] 12:12:07 Published domain event UserCreatedEvent. EventData - {}
+[SCALEUP DBG] 12:12:07 Published domain event TenantCreatedEvent. EventData - {}
+[SCALEUP INF] 12:12:07 HTTP POST /tenants responded 200 in 1722.1669 ms
+[SCALEUP INF] 12:12:14 HTTP POST /tenants responded 422 in 38.8702 ms
+[SCALEUP INF] 12:13:00 HTTP POST /tenants responded 422 in 101.4264 ms
+[SCALEUP INF] 12:13:08 HTTP POST /tenants responded 422 in 1218.3907 ms
+[SCALEUP INF] 13:45:08 HTTP GET /tenants responded 200 in 1447.3933 ms
+[SCALEUP INF] 13:45:14 HTTP POST /tenants responded 422 in 128.5431 ms
+[SCALEUP DBG] 13:45:19 Published domain event TenantCreatedEvent. EventData - {}
+[SCALEUP INF] 13:45:19 HTTP POST /tenants responded 200 in 421.1294 ms
+[SCALEUP DBG] 13:45:23 Published domain event TenantCreatedEvent. EventData - {}
+[SCALEUP INF] 13:45:23 HTTP POST /tenants responded 200 in 18.4253 ms
+[SCALEUP DBG] 13:45:30 Published domain event UserCreatedEvent. EventData - {}
+[SCALEUP DBG] 13:45:30 Published domain event TenantCreatedEvent. EventData - {}
+[SCALEUP INF] 13:45:30 HTTP POST /tenants responded 200 in 23.3778 ms
+[SCALEUP INF] 13:45:32 HTTP GET /tenants responded 200 in 10.3369 ms
+[SCALEUP ERR] 15:08:06 HTTP POST /roles responded 500 in 21.9316 ms
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "CreateRoleRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON array contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $.users_id[1] | LineNumber: 9 | BytePositionInLine: 2.
+ ---> System.Text.Json.JsonReaderException: The JSON array contains a trailing comma at the end which is not supported in this mode. Change the reader options. LineNumber: 9 | BytePositionInLine: 2.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextTokenOrRollback(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 15:08:06 An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "CreateRoleRequest Request" from the request body as JSON.
+ ---> System.Text.Json.JsonException: The JSON array contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $.users_id[1] | LineNumber: 9 | BytePositionInLine: 2.
+ ---> System.Text.Json.JsonReaderException: The JSON array contains a trailing comma at the end which is not supported in this mode. Change the reader options. LineNumber: 9 | BytePositionInLine: 2.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextTokenOrRollback(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP ERR] 15:08:19 An exception occurred in the database while saving changes for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: ScaleUpMaster.Users index: _id_ dup key: { _id: BinData(3, 27434E8076114B41819C6ABCC11FB0B8) }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.SaveUpdatesAsync(IEnumerable`1 updates, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoDatabaseWrapper.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: ScaleUpMaster.Users index: _id_ dup key: { _id: BinData(3, 27434E8076114B41819C6ABCC11FB0B8) }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.SaveUpdatesAsync(IEnumerable`1 updates, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoDatabaseWrapper.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[SCALEUP ERR] 15:08:20 HTTP POST /roles responded 500 in 1900.3619 ms
+MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: ScaleUpMaster.Users index: _id_ dup key: { _id: BinData(3, 27434E8076114B41819C6ABCC11FB0B8) }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.SaveUpdatesAsync(IEnumerable`1 updates, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoDatabaseWrapper.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 75
+   at ScaleUp.Core.Api.Features.Roles.Create.CreateRoleCommandHandler.Handle(CreateRoleCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\Create\CreateRoleCommandHandler.cs:line 32
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 50
+   at ScaleUp.Core.Api.Features.Roles.EndpointBuilder.<>c.<<MapEndpoint>b__0_1>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\EndpointBuilder.cs:line 29
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 15:08:20 An unhandled exception has occurred while executing the request.
+MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: ScaleUpMaster.Users index: _id_ dup key: { _id: BinData(3, 27434E8076114B41819C6ABCC11FB0B8) }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.SaveUpdatesAsync(IEnumerable`1 updates, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoDatabaseWrapper.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at ScaleUp.Core.Persistence.Context.MasterDataContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Persistence\Context\MasterDataContext.cs:line 75
+   at ScaleUp.Core.Api.Features.Roles.Create.CreateRoleCommandHandler.Handle(CreateRoleCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\Create\CreateRoleCommandHandler.cs:line 32
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 50
+   at ScaleUp.Core.Api.Features.Roles.EndpointBuilder.<>c.<<MapEndpoint>b__0_1>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\EndpointBuilder.cs:line 29
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP ERR] 15:09:18 An exception occurred in the database while saving changes for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: ScaleUpMaster.Users index: _id_ dup key: { _id: BinData(3, 27434E8076114B41819C6ABCC11FB0B8) }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.SaveUpdatesAsync(IEnumerable`1 updates, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoDatabaseWrapper.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: ScaleUpMaster.Users index: _id_ dup key: { _id: BinData(3, 27434E8076114B41819C6ABCC11FB0B8) }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoClientWrapper.SaveUpdatesAsync(IEnumerable`1 updates, CancellationToken cancellationToken)
+   at MongoDB.EntityFrameworkCore.Storage.MongoDatabaseWrapper.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[SCALEUP INF] 15:11:05 HTTP POST /roles responded 422 in 5104.8708 ms
+[SCALEUP INF] 15:12:10 HTTP POST /roles responded 200 in 12850.4813 ms
+[SCALEUP INF] 16:05:47 HTTP POST /roles responded 200 in 1737.8481 ms
+[SCALEUP ERR] 16:09:22 HTTP PUT /roles/AB3671B3-B353-4DA0-89E0-FD1011B8CBD7 responded 500 in 390.0249 ms
+System.FormatException: Unrecognized Guid format.
+   at System.Guid.GuidResult.SetFailure(ParseFailure failureKind)
+   at System.Guid.TryParseGuid(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid.Parse(ReadOnlySpan`1 input)
+   at System.Guid.Parse(String input)
+   at ScaleUp.Core.Api.Features.Roles.Update.UpdateRoleCommandHandler.Handle(UpdateRoleCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\Update\UpdateRoleCommandHandler.cs:line 15
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 24
+   at ScaleUp.Core.Api.Features.Roles.EndpointBuilder.<>c.<<MapEndpoint>b__0_2>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\EndpointBuilder.cs:line 43
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 16:09:23 An unhandled exception has occurred while executing the request.
+System.FormatException: Unrecognized Guid format.
+   at System.Guid.GuidResult.SetFailure(ParseFailure failureKind)
+   at System.Guid.TryParseGuid(ReadOnlySpan`1 guidString, GuidResult& result)
+   at System.Guid.Parse(ReadOnlySpan`1 input)
+   at System.Guid.Parse(String input)
+   at ScaleUp.Core.Api.Features.Roles.Update.UpdateRoleCommandHandler.Handle(UpdateRoleCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\Update\UpdateRoleCommandHandler.cs:line 15
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 24
+   at ScaleUp.Core.Api.Features.Roles.EndpointBuilder.<>c.<<MapEndpoint>b__0_2>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\EndpointBuilder.cs:line 43
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP ERR] 16:11:48 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+System.InvalidOperationException: Serializer for ScaleUp.Core.Domain.Entities.Users.User does not have a member named Roles.
+   at MongoDB.Driver.Linq.Linq3Implementation.Misc.DocumentSerializerHelper.GetMemberSerializationInfo(IBsonSerializer serializer, String memberName)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateEnumerable(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.TranslateEnumerableContains(TranslationContext context, MethodCallExpression expression, Expression sourceExpression, Expression valueExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodCallExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateUsingAggregationOperators(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.Translate(TranslationContext context, Expression expression, Boolean exprOk)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateLambda(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.WhereMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.AsMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+System.InvalidOperationException: Serializer for ScaleUp.Core.Domain.Entities.Users.User does not have a member named Roles.
+   at MongoDB.Driver.Linq.Linq3Implementation.Misc.DocumentSerializerHelper.GetMemberSerializationInfo(IBsonSerializer serializer, String memberName)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateEnumerable(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.TranslateEnumerableContains(TranslationContext context, MethodCallExpression expression, Expression sourceExpression, Expression valueExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodCallExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateUsingAggregationOperators(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.Translate(TranslationContext context, Expression expression, Boolean exprOk)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateLambda(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.WhereMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.AsMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP ERR] 16:11:58 HTTP PUT /roles/AB3671B3-B353-4DA0-89E0-FD1011B8CBD7 responded 500 in 11180.5985 ms
+System.InvalidOperationException: Serializer for ScaleUp.Core.Domain.Entities.Users.User does not have a member named Roles.
+   at MongoDB.Driver.Linq.Linq3Implementation.Misc.DocumentSerializerHelper.GetMemberSerializationInfo(IBsonSerializer serializer, String memberName)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateEnumerable(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.TranslateEnumerableContains(TranslationContext context, MethodCallExpression expression, Expression sourceExpression, Expression valueExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodCallExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateUsingAggregationOperators(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.Translate(TranslationContext context, Expression expression, Boolean exprOk)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateLambda(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.WhereMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.AsMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Roles.Update.UpdateRoleCommandHandler.Handle(UpdateRoleCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\Update\UpdateRoleCommandHandler.cs:line 26
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 24
+   at ScaleUp.Core.Api.Features.Roles.EndpointBuilder.<>c.<<MapEndpoint>b__0_2>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\EndpointBuilder.cs:line 43
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 16:11:58 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Serializer for ScaleUp.Core.Domain.Entities.Users.User does not have a member named Roles.
+   at MongoDB.Driver.Linq.Linq3Implementation.Misc.DocumentSerializerHelper.GetMemberSerializationInfo(IBsonSerializer serializer, String memberName)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateEnumerable(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.TranslateEnumerableContains(TranslationContext context, MethodCallExpression expression, Expression sourceExpression, Expression valueExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodCallExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateUsingAggregationOperators(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.Translate(TranslationContext context, Expression expression, Boolean exprOk)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateLambda(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.WhereMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.AsMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Roles.Update.UpdateRoleCommandHandler.Handle(UpdateRoleCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\Update\UpdateRoleCommandHandler.cs:line 26
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 24
+   at ScaleUp.Core.Api.Features.Roles.EndpointBuilder.<>c.<<MapEndpoint>b__0_2>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\EndpointBuilder.cs:line 43
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP ERR] 16:12:31 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+System.InvalidOperationException: Serializer for ScaleUp.Core.Domain.Entities.Users.User does not have a member named Roles.
+   at MongoDB.Driver.Linq.Linq3Implementation.Misc.DocumentSerializerHelper.GetMemberSerializationInfo(IBsonSerializer serializer, String memberName)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateEnumerable(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.TranslateEnumerableContains(TranslationContext context, MethodCallExpression expression, Expression sourceExpression, Expression valueExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodCallExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateUsingAggregationOperators(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.Translate(TranslationContext context, Expression expression, Boolean exprOk)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateLambda(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.WhereMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.AsMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+System.InvalidOperationException: Serializer for ScaleUp.Core.Domain.Entities.Users.User does not have a member named Roles.
+   at MongoDB.Driver.Linq.Linq3Implementation.Misc.DocumentSerializerHelper.GetMemberSerializationInfo(IBsonSerializer serializer, String memberName)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateEnumerable(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.TranslateEnumerableContains(TranslationContext context, MethodCallExpression expression, Expression sourceExpression, Expression valueExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodCallExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateUsingAggregationOperators(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.Translate(TranslationContext context, Expression expression, Boolean exprOk)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateLambda(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.WhereMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.AsMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP ERR] 16:14:27 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+System.InvalidOperationException: Serializer for ScaleUp.Core.Domain.Entities.Users.User does not have a member named Roles.
+   at MongoDB.Driver.Linq.Linq3Implementation.Misc.DocumentSerializerHelper.GetMemberSerializationInfo(IBsonSerializer serializer, String memberName)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateEnumerable(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.TranslateEnumerableContains(TranslationContext context, MethodCallExpression expression, Expression sourceExpression, Expression valueExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodCallExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateUsingAggregationOperators(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.Translate(TranslationContext context, Expression expression, Boolean exprOk)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateLambda(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.WhereMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.AsMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+System.InvalidOperationException: Serializer for ScaleUp.Core.Domain.Entities.Users.User does not have a member named Roles.
+   at MongoDB.Driver.Linq.Linq3Implementation.Misc.DocumentSerializerHelper.GetMemberSerializationInfo(IBsonSerializer serializer, String memberName)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateEnumerable(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.TranslateEnumerableContains(TranslationContext context, MethodCallExpression expression, Expression sourceExpression, Expression valueExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodCallExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateUsingAggregationOperators(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.Translate(TranslationContext context, Expression expression, Boolean exprOk)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateLambda(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.WhereMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.AsMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP ERR] 16:14:55 HTTP PUT /roles/AB3671B3-B353-4DA0-89E0-FD1011B8CBD7 responded 500 in 49959.8878 ms
+System.InvalidOperationException: Serializer for ScaleUp.Core.Domain.Entities.Users.User does not have a member named Roles.
+   at MongoDB.Driver.Linq.Linq3Implementation.Misc.DocumentSerializerHelper.GetMemberSerializationInfo(IBsonSerializer serializer, String memberName)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateEnumerable(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.TranslateEnumerableContains(TranslationContext context, MethodCallExpression expression, Expression sourceExpression, Expression valueExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodCallExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateUsingAggregationOperators(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.Translate(TranslationContext context, Expression expression, Boolean exprOk)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateLambda(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.WhereMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.AsMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Roles.Update.UpdateRoleCommandHandler.Handle(UpdateRoleCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\Update\UpdateRoleCommandHandler.cs:line 26
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 24
+   at ScaleUp.Core.Api.Features.Roles.EndpointBuilder.<>c.<<MapEndpoint>b__0_2>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\EndpointBuilder.cs:line 43
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 16:14:55 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Serializer for ScaleUp.Core.Domain.Entities.Users.User does not have a member named Roles.
+   at MongoDB.Driver.Linq.Linq3Implementation.Misc.DocumentSerializerHelper.GetMemberSerializationInfo(IBsonSerializer serializer, String memberName)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateEnumerable(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.TranslateEnumerableContains(TranslationContext context, MethodCallExpression expression, Expression sourceExpression, Expression valueExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodCallExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateUsingAggregationOperators(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.Translate(TranslationContext context, Expression expression, Boolean exprOk)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateLambda(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.WhereMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.AsMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Roles.Update.UpdateRoleCommandHandler.Handle(UpdateRoleCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\Update\UpdateRoleCommandHandler.cs:line 26
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 24
+   at ScaleUp.Core.Api.Features.Roles.EndpointBuilder.<>c.<<MapEndpoint>b__0_2>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\EndpointBuilder.cs:line 43
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP ERR] 16:16:14 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+System.InvalidOperationException: Serializer for ScaleUp.Core.Domain.Entities.Users.User does not have a member named Roles.
+   at MongoDB.Driver.Linq.Linq3Implementation.Misc.DocumentSerializerHelper.GetMemberSerializationInfo(IBsonSerializer serializer, String memberName)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateEnumerable(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.TranslateEnumerableContains(TranslationContext context, MethodCallExpression expression, Expression sourceExpression, Expression valueExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodCallExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateUsingAggregationOperators(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.Translate(TranslationContext context, Expression expression, Boolean exprOk)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateLambda(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.WhereMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.AsMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+System.InvalidOperationException: Serializer for ScaleUp.Core.Domain.Entities.Users.User does not have a member named Roles.
+   at MongoDB.Driver.Linq.Linq3Implementation.Misc.DocumentSerializerHelper.GetMemberSerializationInfo(IBsonSerializer serializer, String memberName)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateEnumerable(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.TranslateEnumerableContains(TranslationContext context, MethodCallExpression expression, Expression sourceExpression, Expression valueExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodCallExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateUsingAggregationOperators(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.Translate(TranslationContext context, Expression expression, Boolean exprOk)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateLambda(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.WhereMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.AsMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP ERR] 16:17:22 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+System.InvalidOperationException: Serializer for ScaleUp.Core.Domain.Entities.Users.User does not have a member named Roles.
+   at MongoDB.Driver.Linq.Linq3Implementation.Misc.DocumentSerializerHelper.GetMemberSerializationInfo(IBsonSerializer serializer, String memberName)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateEnumerable(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.TranslateEnumerableContains(TranslationContext context, MethodCallExpression expression, Expression sourceExpression, Expression valueExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodCallExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateUsingAggregationOperators(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.Translate(TranslationContext context, Expression expression, Boolean exprOk)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateLambda(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.WhereMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.AsMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+System.InvalidOperationException: Serializer for ScaleUp.Core.Domain.Entities.Users.User does not have a member named Roles.
+   at MongoDB.Driver.Linq.Linq3Implementation.Misc.DocumentSerializerHelper.GetMemberSerializationInfo(IBsonSerializer serializer, String memberName)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateEnumerable(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.TranslateEnumerableContains(TranslationContext context, MethodCallExpression expression, Expression sourceExpression, Expression valueExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodCallExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateUsingAggregationOperators(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.Translate(TranslationContext context, Expression expression, Boolean exprOk)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateLambda(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.WhereMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.AsMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP ERR] 16:17:28 HTTP PUT /roles/AB3671B3-B353-4DA0-89E0-FD1011B8CBD7 responded 500 in 13451.0118 ms
+System.InvalidOperationException: Serializer for ScaleUp.Core.Domain.Entities.Users.User does not have a member named Roles.
+   at MongoDB.Driver.Linq.Linq3Implementation.Misc.DocumentSerializerHelper.GetMemberSerializationInfo(IBsonSerializer serializer, String memberName)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateEnumerable(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.TranslateEnumerableContains(TranslationContext context, MethodCallExpression expression, Expression sourceExpression, Expression valueExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodCallExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateUsingAggregationOperators(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.Translate(TranslationContext context, Expression expression, Boolean exprOk)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateLambda(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.WhereMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.AsMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Roles.Update.UpdateRoleCommandHandler.Handle(UpdateRoleCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\Update\UpdateRoleCommandHandler.cs:line 28
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 24
+   at ScaleUp.Core.Api.Features.Roles.EndpointBuilder.<>c.<<MapEndpoint>b__0_2>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\EndpointBuilder.cs:line 43
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+[SCALEUP ERR] 16:17:28 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Serializer for ScaleUp.Core.Domain.Entities.Users.User does not have a member named Roles.
+   at MongoDB.Driver.Linq.Linq3Implementation.Misc.DocumentSerializerHelper.GetMemberSerializationInfo(IBsonSerializer serializer, String memberName)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateEnumerable(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.TranslateEnumerableContains(TranslationContext context, MethodCallExpression expression, Expression sourceExpression, Expression valueExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodCallExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateUsingAggregationOperators(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.Translate(TranslationContext context, Expression expression, Boolean exprOk)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateLambda(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.WhereMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.AsMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ScaleUp.Core.Api.Features.Roles.Update.UpdateRoleCommandHandler.Handle(UpdateRoleCommand command, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\Update\UpdateRoleCommandHandler.cs:line 28
+   at ScaleUp.Core.Api.Base.Behaviors.CommandValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Base\Behaviors\CommandValidationBehavior.cs:line 24
+   at ScaleUp.Core.Api.Features.Roles.EndpointBuilder.<>c.<<MapEndpoint>b__0_2>d.MoveNext() in D:\Workspace\scaleup-core\src\ScaleUp.Core.Api\Features\Roles\EndpointBuilder.cs:line 43
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_1.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.SwaggerUiIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.RedirectToIndexMiddleware.Invoke(HttpContext context)
+   at NSwag.AspNetCore.Middlewares.OpenApiDocumentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP ERR] 16:20:58 An exception occurred while iterating over the results of a query for context type 'ScaleUp.Core.Persistence.Context.MasterDataContext'.
+System.InvalidOperationException: Serializer for ScaleUp.Core.Domain.Entities.Users.User does not have a member named Roles.
+   at MongoDB.Driver.Linq.Linq3Implementation.Misc.DocumentSerializerHelper.GetMemberSerializationInfo(IBsonSerializer serializer, String memberName)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateEnumerable(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.TranslateEnumerableContains(TranslationContext context, MethodCallExpression expression, Expression sourceExpression, Expression valueExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodCallExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateUsingAggregationOperators(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.Translate(TranslationContext context, Expression expression, Boolean exprOk)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateLambda(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.WhereMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.AsMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+System.InvalidOperationException: Serializer for ScaleUp.Core.Domain.Entities.Users.User does not have a member named Roles.
+   at MongoDB.Driver.Linq.Linq3Implementation.Misc.DocumentSerializerHelper.GetMemberSerializationInfo(IBsonSerializer serializer, String memberName)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MemberExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MemberExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.TranslateEnumerable(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.TranslateEnumerableContains(TranslationContext context, MethodCallExpression expression, Expression sourceExpression, Expression valueExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodTranslators.ContainsMethodToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.MethodCallExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToAggregationExpressionTranslators.ExpressionToAggregationExpressionTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateUsingAggregationOperators(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.Translate(TranslationContext context, Expression expression, Boolean exprOk)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ExpressionToFilterTranslator.TranslateLambda(TranslationContext context, LambdaExpression lambdaExpression, IBsonSerializer parameterSerializer, Boolean asRoot)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.WhereMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.SelectMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.AsMethodToPipelineTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToPipelineTranslators.ExpressionToPipelineTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExpressionToExecutableQueryTranslator.Translate[TDocument,TOutput](MongoQueryProvider`1 provider, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.Execute()
+   at MongoDB.Driver.Linq.Linq3Implementation.MongoQuery`2.GetEnumerator()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextHelper()
+   at MongoDB.EntityFrameworkCore.Query.QueryingEnumerable`2.Enumerator.MoveNextAsync()
+[SCALEUP INF] 16:22:40 HTTP PUT /roles/AB3671B3-B353-4DA0-89E0-FD1011B8CBD7 responded 200 in 39169.9358 ms

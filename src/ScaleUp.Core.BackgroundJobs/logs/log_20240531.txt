@@ -1,0 +1,60 @@
+[SCALEUP DBG] 10:19:22 Acquired lock for migration
+[SCALEUP INF] 10:19:24 Starting Hangfire Server using job storage: 'Connection string: mongodb://<username>:<password>@scaleup.rpnv9u3.mongodb.net:53, database name: ScaleUpMaster, prefix: hangfire'
+[SCALEUP INF] 10:19:24 Using the following options for Mongo DB job storage:
+[SCALEUP INF] 10:19:24     Prefix: hangfire.
+[SCALEUP INF] 10:19:24 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+[SCALEUP DBG] 10:19:24 Execution loop BackgroundServerProcess:027557bd has started in 6.4445 ms
+[SCALEUP INF] 10:19:24 Server long:7724:6c35809d successfully announced in 73.4904 ms
+[SCALEUP DBG] 10:19:24 Execution loop ServerHeartbeatProcess:89e4c358 has started in 3.9253 ms
+[SCALEUP INF] 10:19:24 Server long:7724:6c35809d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, MongoExpirationManager, MongoJobQueueWatcher, Worker, DelayedJobScheduler, RecurringJobScheduler...
+[SCALEUP DBG] 10:19:24 Execution loop ServerWatchdog:35b49d32 has started in 2.6181 ms
+[SCALEUP DBG] 10:19:24 Execution loop ServerJobCancellationWatcher:934dea77 has started in 5.4894 ms
+[SCALEUP DBG] 10:19:24 Execution loop MongoExpirationManager:fa8f9f5c has started in 6.975 ms
+[SCALEUP DBG] 10:19:24 Execution loop MongoJobQueueWatcher:2db12bbd has started in 4.6818 ms
+[SCALEUP DBG] 10:19:24 Execution loop Worker:4fe4afc2 has started in 10.4036 ms
+[SCALEUP DBG] 10:19:24 Execution loop Worker:fc667f9d has started in 16.1673 ms
+[SCALEUP DBG] 10:19:24 Execution loop Worker:85c37288 has started in 17.9105 ms
+[SCALEUP DBG] 10:19:24 Execution loop Worker:3006c47a has started in 25.4588 ms
+[SCALEUP DBG] 10:19:24 Execution loop Worker:7e767a5c has started in 30.3983 ms
+[SCALEUP DBG] 10:19:24 Execution loop Worker:ddad86cc has started in 34.3816 ms
+[SCALEUP DBG] 10:19:24 Execution loop Worker:ed537bef has started in 36.8858 ms
+[SCALEUP DBG] 10:19:24 Execution loop Worker:c34a841e has started in 43.4832 ms
+[SCALEUP DBG] 10:19:24 Execution loop Worker:5c3b1928 has started in 45.7207 ms
+[SCALEUP DBG] 10:19:24 Execution loop Worker:38ecf643 has started in 47.9984 ms
+[SCALEUP DBG] 10:19:24 Execution loop Worker:5a9a614a has started in 53.9231 ms
+[SCALEUP DBG] 10:19:24 Execution loop Worker:1fd14486 has started in 56.2805 ms
+[SCALEUP DBG] 10:19:24 Execution loop Worker:068a9545 has started in 61.0905 ms
+[SCALEUP DBG] 10:19:24 Execution loop Worker:01c9f2ae has started in 62.8906 ms
+[SCALEUP DBG] 10:19:24 Execution loop Worker:6c4f8a4c has started in 70.9693 ms
+[SCALEUP DBG] 10:19:24 Execution loop Worker:22da18c0 has started in 77.3454 ms
+[SCALEUP DBG] 10:19:24 Execution loop Worker:e2f89e16 has started in 86.1876 ms
+[SCALEUP DBG] 10:19:24 Execution loop Worker:97afbf7f has started in 92.0595 ms
+[SCALEUP DBG] 10:19:24 Execution loop Worker:9d754b97 has started in 94.7091 ms
+[SCALEUP DBG] 10:19:24 Execution loop Worker:e92b90e2 has started in 102.1867 ms
+[SCALEUP DBG] 10:19:24 Removed 3 outdated documents from 'hangfire.jobGraph'.
+[SCALEUP DBG] 10:19:24 Execution loop DelayedJobScheduler:695ca998 has started in 15.932 ms
+[SCALEUP INF] 10:19:24 Server long:7724:6c35809d all the dispatchers started
+[SCALEUP DBG] 10:19:24 Execution loop RecurringJobScheduler:4aa707c0 has started in 20.771 ms
+[SCALEUP ERR] 10:19:24 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Hangfire.Dashboard.AspNetCoreDashboardMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.InvokeCore(HttpContext context, PathString matchedPath, PathString remainingPath)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[SCALEUP WRN] 10:19:24 The response has already started, the error page middleware will not be executed.
+[SCALEUP ERR] 10:19:24 Connection id "0HN4141SAS2SQ", Request id "0HN4141SAS2SQ:00000001": An unhandled exception was thrown by the application.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Hangfire.Dashboard.AspNetCoreDashboardMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.InvokeCore(HttpContext context, PathString matchedPath, PathString remainingPath)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+[SCALEUP DBG] 10:19:54 Server long:7724:6c35809d heartbeat successfully sent
+[SCALEUP DBG] 10:20:24 Server long:7724:6c35809d heartbeat successfully sent

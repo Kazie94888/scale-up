@@ -1,0 +1,16 @@
+D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\obj\Debug\net8.0\ScaleUp.Core.Domain.csproj.AssemblyReference.cache
+D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\obj\Debug\net8.0\ScaleUp.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\obj\Debug\net8.0\ScaleUp.Core.Domain.AssemblyInfoInputs.cache
+D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\obj\Debug\net8.0\ScaleUp.Core.Domain.AssemblyInfo.cs
+D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\obj\Debug\net8.0\ScaleUp.Core.Domain.csproj.CoreCompileInputs.cache
+D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\obj\Debug\net8.0\ScaleUp.Core.Domain.sourcelink.json
+D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\bin\Debug\net8.0\ScaleUp.Core.Domain.deps.json
+D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\bin\Debug\net8.0\ScaleUp.Core.Domain.dll
+D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\bin\Debug\net8.0\ScaleUp.Core.Domain.pdb
+D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\bin\Debug\net8.0\ScaleUp.Core.SharedKernel.dll
+D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\bin\Debug\net8.0\ScaleUp.Core.SharedKernel.pdb
+D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\obj\Debug\net8.0\ScaleUp..17929860.Up2Date
+D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\obj\Debug\net8.0\ScaleUp.Core.Domain.dll
+D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\obj\Debug\net8.0\refint\ScaleUp.Core.Domain.dll
+D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\obj\Debug\net8.0\ScaleUp.Core.Domain.pdb
+D:\Workspace\scaleup-core\src\ScaleUp.Core.Domain\obj\Debug\net8.0\ref\ScaleUp.Core.Domain.dll
